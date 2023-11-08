@@ -1,0 +1,1177 @@
+// ..........section 1............
+
+.lmplab-homepage-main-bg {
+  background: url("../../assets/images/home-bg.png");
+  max-width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.homepage-secion1-main {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.section1-bgImg-main {
+  width: 100%;
+  padding: 50px 0px;
+  min-width: 300px;
+}
+.section1-bgImg {
+  width: 731px;
+  height: 627px;
+  // animation: rotate 100s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section1-position-main {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 900px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  height: 40vh;
+  left: 0px;
+}
+.section1-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  font-size: 60px;
+  line-height: 174.52%;
+  margin: 0px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.color-change-text {
+  color: #07006a;
+  background-color: #a6ff35;
+  padding-left: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+  font-family: "Josefin Sans";
+}
+#section1-button {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Josefin Sans";
+  border: none;
+  width: 610px;
+  height: 75px;
+  font-size: 24px;
+  line-height: 154.02%;
+  letter-spacing: 0.435em;
+  color: #1a0f5e;
+  border-radius: 58px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+#section1-button:hover {
+  background: #00ffff;
+  border-radius: 58px;
+}
+.section1-left-border {
+  border-left: 1px solid white;
+}
+.home-subtitle {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 20px 150px;
+  line-height: 140%;
+}
+/* .............section2 css.................. */
+.homepage-secion2-main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.section2-flex {
+  width: 100%;
+  margin: 0px 70px;
+  text-align: left;
+}
+.section2-pera {
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 23px;
+  font-style: normal;
+  line-height: 130.023%; /* 36.965px */
+  letter-spacing: 1.8px;
+}
+.section2-Img {
+  width: 500px;
+  height: 500px;
+}
+.section2-button {
+  background-color: #a6ff35;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 154.02%;
+  letter-spacing: 0.56em;
+  color: #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 48px;
+  text-shadow: 5px 2px 8px rgba(0, 0, 0, 0.73);
+  padding: 20px 30px;
+  border: none;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-weight: 600;
+}
+
+#button-7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #fcffff;
+  right: -235px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 img {
+  width: 20px;
+  height: auto;
+}
+
+#button-7:hover #dub-arrow {
+  right: 0;
+}
+
+#button-7:hover a {
+  right: 150px;
+}
+.home-ml-pera {
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 23px;
+
+  font-style: normal;
+  line-height: 130%; /* 36.965px */
+  letter-spacing: 1.8px;
+}
+.hide-for-web {
+  display: none !important;
+}
+/* ..........section3 css............ */
+.homepage-secion3-main-template {
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.section3-card {
+  width: 645px;
+  padding: 50px;
+  height: 400px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  border-radius: 45px;
+  background: linear-gradient(117deg, #fcffff 1.47%, #a3ffff 98.65%);
+  box-shadow: 0px 0px 157px 0px rgba(0, 0, 0, 0.17);
+}
+
+.homepage-secion3-main-template .rec .rec-pagination {
+  box-sizing: border-box;
+  padding: 0px;
+  transition: all 250ms ease 0s;
+  border: none;
+  margin: 5px;
+  background-color: rgb(255 255 255) !important;
+  font-size: 1.3em;
+  content: "";
+  display: none !important;
+  height: 10px;
+  width: 10px;
+  box-shadow: rgb(0 6 255) 0px 0px 1px 3px !important;
+  border-radius: 50%;
+  outline: none;
+}
+.homepage-secion3-main-template .rec.rec-arrow {
+  background-color: #00ffff !important;
+}
+.rec.rec-arrow:hover {
+  background: none !important;
+}
+.homepage-secion3-main-template .rec-carousel {
+  width: 75% !important;
+  margin: 80px 0px 50px 0px;
+}
+.section3-card-title {
+  color: #0a11b5;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 174.523%; /* 62.828px */
+  letter-spacing: 0.9px;
+  width: 409.922px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.section3-card-xcompute {
+  color: #0a11b5;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 174.523%;
+  letter-spacing: 0.9px;
+  width: 409.922px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.section3-card-desc {
+  color: #060028;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 168.023%;
+  letter-spacing: 1.36px;
+}
+.section3-card-button {
+  border-radius: 48px;
+  background: #0ff;
+  width: 200px;
+  height: 55px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  border: none;
+  color: #000;
+  text-shadow: 5px 2px 8px rgba(0, 0, 0, 0.73);
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.023%;
+  letter-spacing: 4.72px;
+}
+
+/* ...........section4 CSS........... */
+
+.homepage-secion4-main {
+  width: 100%;
+  margin: 100px 0px;
+}
+.sectio4-title {
+  color: #a6ff35;
+  font-family: "Josefin Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.023%; /* 98.575px */
+  letter-spacing: 28.48px;
+}
+.item {
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  align-items: center;
+  width: 80%;
+}
+.accordion-icon {
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.accordion-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.accordion-icon.collapsed {
+  transform: rotate(0deg);
+}
+
+.faq-que-main {
+  background: #d9d9d9;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-weight: 600;
+  width: 80%;
+  font-family: "Josefin Sans";
+  align-items: center;
+}
+
+.faq-ans-main {
+  background: #d9d9d9;
+  display: flex;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Josefin Sans";
+  align-items: center;
+  top: -35px;
+}
+
+.faqsub.visible {
+  display: block;
+}
+.accordion-ans {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  width: 90%;
+  font-family: "Josefin Sans";
+  line-height: 109.02%;
+  letter-spacing: 0.065em;
+  padding: 10px;
+  color: #1a0f5e;
+  text-align: left;
+}
+.accordion-que {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Josefin Sans";
+  line-height: 154.02%;
+  padding: 10px;
+  letter-spacing: 0.065em;
+  color: #1a0f5e;
+  text-align: left;
+}
+input [type="radio"]:after {
+  background-color: #00d7ff;
+}
+input [type="radio"]:checked::after {
+  background-color: #1a0f5e;
+}
+.homepage-secion3-main-template-mobile {
+  display: none;
+}
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* .....................mobile responsive ..................... */
+
+@media only screen and (max-width: 1024px) {
+  #section1-button {
+    font-size: 17px;
+    line-height: 154.02%;
+    letter-spacing: 0.3em;
+    padding: 15px 20px;
+    margin-top: 30px;
+    width: 465px;
+    height: 60px;
+  }
+  .homepage-secion3-main-template {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  .homepage-secion3-main-template .rec-carousel {
+    width: 90% !important;
+    margin: 50px 0px 0px 0px;
+  }
+  .section3-card-xcompute {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 154.02%;
+    letter-spacing: 3px;
+    color: #00ffd1;
+  }
+  .homepage-secion3-main-template {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px;
+    justify-content: center;
+  }
+  .faq-accordion-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section1-bgImg {
+    width: 500px;
+    height: 465px;
+  }
+  .section1-heading {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    line-height: 8vh;
+  }
+  .section1-position-main {
+    margin: 0 auto;
+    height: 35vh;
+    top: 35%;
+    min-width: 800px;
+  }
+  .section2-Img {
+    width: 500px;
+    height: 430px;
+    min-width: 300px;
+  }
+  #section2-button {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    margin-top: 20px;
+  }
+  .section2-pera {
+    font-size: 18px;
+    line-height: 3.5vh;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .homepage-secion2-main {
+    margin-top: 50px;
+  }
+  .section3-card {
+    padding: 40px 50px;
+  }
+  .section3-card-title {
+    letter-spacing: 3px;
+
+    font-weight: 400;
+  }
+  .section3-card-desc {
+    font-size: 19px;
+    padding: 20px 0px;
+    width: 80%;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .section3-card-button {
+    font-size: 14px;
+    line-height: 157.02%;
+    letter-spacing: 0.2rem;
+    color: #1a0f5e;
+    width: 185px;
+    height: 50px;
+    padding: 15px 20px;
+  }
+
+  .Slxdj {
+    font-size: 2em !important;
+    width: 40px !important;
+    height: 50px !important;
+  }
+  .kXteup {
+    font-size: 2em !important;
+    width: 40px !important;
+    height: 50px !important;
+  }
+  .sectio4-title {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin: 30px 0px;
+  }
+  .faq-que-main {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    width: 100%;
+  }
+  .accordion-icon {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+  }
+  .accordion-ans {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 109.02%;
+    letter-spacing: 0.065em;
+    color: #1a0f5e;
+    text-align: left;
+  }
+  .accordion-que {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 154.02%;
+    letter-spacing: 0.065em;
+    color: #1a0f5e;
+    text-align: left;
+  }
+  .home-ml-pera {
+    font-size: 18px;
+    line-height: 3.5vh;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .hide-for-web {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homepage-secion1-main {
+    margin-top: 50px !important;
+  }
+  .section1-position-main {
+    min-width: 500px;
+    padding-left: 0px !important;
+    height: 27vh;
+    top: 25%;
+  }
+  .homepage-secion2-main {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    width: 100%;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  .section2-Img {
+    width: 300px;
+    position: absolute;
+    z-index: -1;
+    left: 55%;
+    height: fit-content;
+    top: -15%;
+    min-width: 300px;
+  }
+  .homepage-secion1-main {
+    width: 100%;
+  }
+  .home-ml-pera {
+    font-size: 17px;
+    line-height: 3.5vh;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  #section1-button {
+    font-size: 12px;
+    line-height: 154.02%;
+    letter-spacing: 0.3em;
+    padding: 15px 20px;
+    margin-top: 30px;
+    width: 343px;
+    height: 60px;
+  }
+  .section1-bgImg {
+    width: 400px;
+    height: 360px;
+  }
+  .section1-bgImg-main {
+    width: 100%;
+
+    min-width: 300px;
+    /* position: relative; */
+  }
+  .section1-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    line-height: 7vh;
+  }
+  .section2-pera {
+    font-size: 17px;
+    line-height: 3.5vh;
+    width: 65%;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .homepage-secion3-main-template {
+    margin-top: 100px;
+  }
+  #section2-button {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    margin-top: 20px;
+  }
+  .section2-flex {
+    width: 75%;
+    display: flex;
+    margin: 0px 53px;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .faq-accordion-main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .faq-que-main {
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .homepage-secion3-main-tablet {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .homepage-secion3-main {
+    display: none;
+  }
+  .section3-card {
+    padding: 30px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // min-height: 43vh;
+    justify-content: center;
+  }
+
+  .sectio4-title {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin: 30px 0px;
+  }
+  .section3-card-title {
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .section3-card-desc {
+    font-size: 15px;
+    padding: 6px 0px;
+    width: 80%;
+    line-height: 25px;
+  }
+  .section3-card-button {
+    font-size: 10px;
+    line-height: 150.02%;
+    letter-spacing: 0.2rem;
+    color: #1a0f5e;
+    padding: 15px 20px;
+    margin-top: 20px;
+    width: 165px;
+    height: 45px;
+  }
+  .icon-position2 {
+    position: fixed;
+    bottom: 47% !important;
+    right: 25px;
+    z-index: 20;
+  }
+  .icon-style {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 20px !important;
+    width: 15px !important;
+    color: #fff;
+    cursor: pointer;
+  }
+  .icon-position {
+    position: fixed;
+    bottom: 51% !important;
+    right: 25px;
+    z-index: 20;
+  }
+  .accordion-icon {
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .homepage-secion3-main-template .rec-carousel {
+    width: 95% !important;
+    margin: 50px 0px 0px 0px;
+  }
+  .homepage-secion4-main {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .color-change-text {
+    color: #07006a;
+    background-color: #a6ff35;
+    padding-left: 1.8rem;
+    padding: 10px;
+    font-weight: 400;
+  }
+  .home-subtitle {
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    padding: 20px 100px;
+    line-height: 150%;
+  }
+  .hide-for-web {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section1-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 9px;
+    line-height: 5vh;
+  }
+  .home-subtitle {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 20px 70px;
+    line-height: 150%;
+  }
+  .section1-bgImg {
+    width: 350px;
+    height: 350px;
+  }
+  .section1-position-main {
+    min-width: 400px;
+    padding-left: 0px !important;
+    height: 24vh;
+    top: 32%;
+  }
+  .section2-Img {
+    position: absolute;
+    z-index: -1;
+
+    left: 46%;
+    top: -17%;
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+  .section2-Img {
+    top: 5%;
+    min-width: 150px;
+    position: absolute;
+    z-index: -1;
+    left: 52%;
+    rotate: 26deg;
+    transform: scaleX(-1);
+    height: fit-content;
+    flex-shrink: 0;
+    width: 150px;
+
+    flex-shrink: 0;
+  }
+  .section2-pera1 {
+    font-size: 15px;
+    line-height: 3.3vh;
+    width: 60%;
+    color: #fff;
+    text-align: left;
+
+    letter-spacing: 1.5px;
+  }
+  .home-ml-pera1 {
+    font-size: 15px;
+    line-height: 3.3vh;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1.5px;
+  }
+  .accordion-icon {
+    width: 70px;
+    height: 60px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .item {
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+  }
+  .homepage-secion4-main {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .accordion-que {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 154.02%;
+    color: #1a0f5e;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 154.023%;
+    letter-spacing: 0.65px;
+    letter-spacing: 0.065em;
+    color: #1a0f5e;
+    text-align: left;
+  }
+  .faq-que-main {
+    padding: 15px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .accordion-ans {
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.02%;
+    letter-spacing: 0.065em;
+    color: rgb(26, 15, 94);
+    text-align: left;
+  }
+  .hide-for-mobile {
+    display: none;
+  }
+  .hide-for-web {
+    display: block !important;
+  }
+  .section3-card-desc {
+    font-size: 14px;
+    padding: 6px 0px;
+    width: 75%;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  .section3-card-title {
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .accordion-que {
+    font-family: Josefin Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px;
+    line-height: 154.023%;
+    letter-spacing: 0.65px;
+    letter-spacing: 0.065em;
+    color: #1a0f5e;
+    text-align: left;
+  }
+  .hide-for-mobile {
+    display: none;
+  }
+  .hide-for-web {
+    display: block !important;
+    margin-top: 50px;
+  }
+  .home-subtitle {
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /* width: 200px; */
+    margin: 0 auto;
+    padding: 15px 50px;
+    line-height: 150%;
+  }
+  .homepage-secion1-main {
+    width: 100%;
+    margin: 50px 0px;
+  }
+  .section1-bgImg-main {
+    width: 100%;
+    min-width: 300px;
+  }
+  .section1-heading {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 4vh;
+  }
+  #section1-button {
+    font-size: 10px;
+    line-height: 154.02%;
+    letter-spacing: 0.2em;
+    padding: 9px 10px;
+    margin-top: 10px;
+    width: 199px;
+    height: 35px;
+  }
+  .section1-position-main {
+    min-width: 200px;
+    padding-left: 0px !important;
+    height: 16vh;
+    top: 24% !important;
+  }
+
+  .icon-style {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+    color: #fff;
+    cursor: pointer;
+  }
+  .icon-position {
+    position: fixed;
+    bottom: 80% !important;
+    right: 12px !important;
+    z-index: 20;
+  }
+  .section2-Img {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 4%;
+    min-width: 152px;
+    rotate: 26deg;
+    width: 172px;
+
+    transform: scaleX(-1);
+    height: 200px;
+    flex-shrink: 0;
+  }
+  .section2-pera1 {
+    font-size: 13px;
+    line-height: 3vh;
+    width: 60%;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .home-ml-pera1 {
+    font-size: 13px;
+    line-height: 3vh;
+    text-align: left;
+    margin: 20px 0px;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .icon-position2 {
+    position: fixed;
+    bottom: 77% !important;
+    right: 12px !important;
+    z-index: 20;
+  }
+  .icon-position3 {
+    position: fixed;
+    bottom: 74% !important;
+    right: 12px !important;
+    z-index: 20;
+  }
+  .section2-pera {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-align: center;
+    text-align: justify;
+  }
+  .section2-flex {
+    width: 85%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .homepage-secion2-main {
+    margin-top: 30px;
+    display: block;
+    margin: 50px 0px;
+  }
+  #section2-button {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #000;
+    text-shadow: 5px 2px 8px rgba(0, 0, 0, 0.3);
+    font-family: Josefin Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 154.023%;
+    letter-spacing: 5.6px;
+    padding: 12px 30px;
+    margin-top: 20px;
+  }
+  .rec.rec-arrow {
+    font-size: 1.5em !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    width: 50px !important;
+    height: 50px !important;
+    /* background-color: #07006A !important; */
+  }
+  .Slxdj {
+    font-size: 0.9em !important;
+    width: 26px !important;
+    height: 32px !important;
+  }
+  .kXteup {
+    font-size: 0.9em !important;
+    width: 26px !important;
+    height: 32px !important;
+    min-width: 0px !important;
+    min-width: 0px !important;
+    line-height: 0px !important;
+  }
+
+  .section3-card-desc {
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 0px;
+    width: 100%;
+    line-height: 23px;
+    letter-spacing: 2px;
+  }
+  .section3-card-title {
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .section3-card-xcompute {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154.02%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #00ffd1;
+  }
+  .section3-card {
+    padding: 30px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // min-height: 40vh;
+    justify-content: space-evenly;
+  }
+  .section3-card-button {
+    font-size: 10px;
+    line-height: 100.02%;
+    letter-spacing: 3px;
+    color: #1a0f5e;
+    padding: 13px 15px;
+    margin-top: 12px;
+  }
+  .sectio4-title {
+    font-size: 2.5rem;
+    color: #a6ff35;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 154.023%;
+    letter-spacing: 8.9px;
+    letter-spacing: 10px;
+    margin: 30px 0px;
+  }
+  .homepage-secion4-main {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .accordion-icon {
+    width: 40px;
+    height: 35px;
+    padding: 5px 8px;
+  }
+  .accordion-ans {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 154.023%;
+    letter-spacing: 0.65px;
+
+    text-align: left;
+
+    /* width: 874px; */
+    /* height: 78px; */
+    color: #1a0f5e;
+  }
+  .faq-que-main {
+    padding: 10px;
+    font-size: 10px;
+    text-align: left;
+    width: 300px;
+  }
+  .item {
+    padding: 10px 20px;
+  }
+  .navbar-logo-main {
+    margin-bottom: 0;
+  }
+  .section1-bgImg {
+    width: 308px;
+    height: 264px;
+  }
+  .homepage-secion3-main-template-mobile {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .homepage-secion3-main-template {
+    margin: 50px 0px;
+  }
+  .homepage-secion3-main-template .rec-carousel {
+    width: 95% !important;
+    margin: 80px 0px 0px 0px;
+  }
+}
