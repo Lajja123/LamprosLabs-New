@@ -1,7 +1,220 @@
 import React from "react";
+import "../dao-roadmap/DaoRoadmap.scss"
+import { useRef } from "react";
+import daoimg1 from "../../assets/images/daoimg1.png";
+import daoimg2 from "../../assets/images/daoimg2.png";
+import daoimg3 from "../../assets/images/daoimg3.png";
+import daoimg4 from "../../assets/images/daoimg4.png";
+import daoimg5 from "../../assets/images/daoimg5.png";
+import daoimg6 from "../../assets/images/daoimg6.png";
+import daoimg7 from "../../assets/images/daoimg7.png";
+import daoimg8 from "../../assets/images/daoimg8.png";
+import daoFooterImg from "../../assets/images/dao-page-footer-img.png";
+import Navbar from "../navbar/Navbar";
+import daoline from "../../assets/images/daoline.png";
+import Footer from "../footer/Footer";
+
 
 function DaoRoadmap() {
-  return <div>DaoRoadmap</div>;
+
+  return (
+    <div className="dao-main-bg">
+      <Navbar />
+      <div className="dao-roadmap">
+        <div
+          className="dao-sec1-main d-none d-md-flex"
+          smooth={true}
+          duration={200}
+        >
+         
+            <div className="dao-sec1-flex1">
+              <div className="dao-roadmap2">DAO Roadmap</div>
+              <div className="we-envision-a">
+                We envision a future where Lampros Labs transforms into a
+                decentralized autonomous organization (DAO), a nexus where
+                collective intelligence drives innovation and growth. Our
+                roadmap sketches the pathway to this transformation,
+                highlighting the pivotal milestones that will shape our
+                decentralized future. Here, we outline the structured phases
+                that will lead us to become a more collaborative, autonomous,
+                and community-driven entity.
+              </div>
+            </div>
+          
+
+          <div className="dao-sec1-flex2">
+            <img className="illustration-14-1" alt="" src={daoimg1} />
+            <img className="mobile-img7" alt="" src={daoimg7} />
+          </div>
+        </div>
+       
+        <div className="lampros-labs-roadmap-container for-laptops d-none d-md-block">
+            <div  smooth={true} duration={200}>
+              Lampros Labs <span className="roadmap">Roadmap</span>
+            </div>
+            <div>to Becoming a DAO</div>
+        </div>
+       
+        <div className="d-md-none">
+          <div className="dao-sec1-flex1">
+           
+              <div className="dao-roadmap2">DAO Roadmap</div>
+              <div className="we-envision-a">
+                We envision a future where Lampros Labs transforms into a
+                decentralized autonomous organization (DAO), a nexus where
+                collective intelligence drives innovation and growth. Our
+                roadmap sketches the pathway to this transformation,
+                highlighting the pivotal milestones that will shape our
+                decentralized future. Here, we outline the structured phases
+                that will lead us to become a more collaborative, autonomous,
+                and community-driven entity.
+              </div>
+          
+            <img className="mobile-dao-img" alt="" src={daoimg7} />
+          </div>
+        </div>
+        
+        <div className="for-mobiles d-md-none">
+         
+            <div className="lampros-labs-roadmap-container  ">
+              <div>
+                Lampros Labs <br />
+                <span className="roadmap">Roadmap</span> TO <br /> Becoming a
+                dao
+              </div>
+              <div className="d-md-none">
+                <img
+                  className="mobile-heading-left-image "
+                  alt=""
+                  src={daoimg8}
+                />
+              </div>
+            </div>
+        </div>
+
+        <div
+          className="dao-sec2-main"
+          smooth={true}
+          duration={200}
+        >
+          <img className="dao-roadmap-inner" alt="" src={daoline} />
+          <div className="dao-sec2-first">
+            <img className="design-31-1" alt="" src={daoimg2} />
+            <img
+              className="design-32-1 d-none d-md-block"
+              alt=""
+              src={daoimg3}
+            />
+           
+              <div className="dao-box1-main dao-box-style-left">
+                <div className="dao-box-heading">Foundation Phase</div>
+                <div>
+                  <ul className="dao-box-pera custom-list ">
+                    <li>DAO Concept Introduction</li>
+                    <li>Community Brainstorming</li>
+                    <li>Feasibility Analysis</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div className="dao-box2-main dao-box-style-left">
+                <div className="dao-box-heading">
+                  Development & Design Phase
+                </div>
+                <div>
+                  <ul className="dao-box-pera custom-list ">
+                    <li>DAO Framework Formulation</li>
+                    <li>Technical Architecture Design</li>
+                    <li>Pilot DAO Launch</li>
+                  </ul>
+                </div>
+              </div>
+           
+              <div className="dao-box3-main custom-list dao-box-style-left">
+                <div className="dao-box-heading">Implementation Phase</div>
+                <div>
+                  <ul className="dao-box-pera custom-list ">
+                    <li>Governance Token Issuance</li>
+                    <li>Infrastructure Integration</li>
+                    <li>Community Education</li>
+                  </ul>
+                </div>
+              </div>
+          
+          </div>
+          <div className="dao-sec2-second">
+          
+              <div className="dao-box4-main dao-box-style-right">
+                <div className="dao-box-heading">
+                  Iteration & Enhancement Phase
+                </div>
+                <div>
+                  <ul className="dao-box-pera1  ">
+                    <li>Community Feedback and Adjustments</li>
+                    <li>Continuous Learning Modules</li>
+                    <li>Proposal Mechanisms Initiated</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div className="dao-box5-main dao-box-style-right">
+                <div className="dao-box-heading">
+                  Full Decentralization Phase
+                </div>
+                <div>
+                  <ul className="dao-box-pera1  ">
+                    <li>Complete Operational Transition to DAO</li>
+                    <li>Decentralized Revenue Distribution</li>
+                    <li>Community-Led Growth and Innovation</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div className="dao-box6-main dao-box-style-right">
+                <div className="dao-box-heading">
+                  Review & Future Prospects Phase
+                </div>
+                <div>
+                  <ul className="dao-box-pera1 ">
+                    <li>Periodic Operational Review</li>
+                    <li>Future Goal Outlining</li>
+                    <li>Staying Ahead in the Web3 Evolution</li>
+                  </ul>
+                </div>
+              </div>
+         
+
+            <div>
+              <img
+                className="dao-right-img-1 d-none d-md-block"
+                alt=""
+                src={daoimg4}
+              />
+            </div>
+            <div>
+              <img
+                className="dao-right-img-2 d-none d-md-block"
+                alt=""
+                src={daoimg5}
+              />
+            </div>
+            <div>
+              <img
+                className="dao-right-img-3 d-none d-md-block"
+                alt=""
+                src={daoimg6}
+              />
+            </div>
+            <div className="d-md-none">
+              <img className="dao-footer-img" alt="" src={daoFooterImg} />
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default DaoRoadmap;

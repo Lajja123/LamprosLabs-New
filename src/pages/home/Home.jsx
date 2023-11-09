@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <div className="lmplab-homepage-main-bg">
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="scroll-top">
           <section
             className="homepage-secion1-main"

@@ -10,9 +10,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route path="/programs/hackathon" element={<Hackathon />}></Route>
           <Route path="/dao-roadmap" element={<DaoRoadmap />}></Route>

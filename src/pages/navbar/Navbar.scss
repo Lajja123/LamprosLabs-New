@@ -1,9 +1,15 @@
 .navbar-logo {
-  padding: 15px;
+  padding: 10px 15px;
   color: #fff;
 }
+.logo-img {
+  width: 258px;
+  height: 45px;
+  flex-shrink: 0;
+}
 .navbar-mainbg {
-  background-color: #5161ce;
+  background: rgba(53, 14, 255, 0.24);
+  box-shadow: 0px 0px 157px 0px rgba(0, 0, 0, 0.17);
   padding: 0px;
 }
 #navbarSupportedContent {
@@ -22,26 +28,29 @@
   float: left;
 }
 #navbarSupportedContent ul li a {
-  color: rgba(255, 255, 255, 0.5);
+  color:#fff;
   text-decoration: none;
   font-size: 15px;
   display: block;
-  padding: 20px 20px;
+  padding: 20px 30px;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
 }
 #navbarSupportedContent > ul > li.active > a {
-  color: #5161ce;
+  color: #0A11B5;
   background-color: transparent;
   transition: all 0.7s;
 }
 #navbarSupportedContent a:not(:only-child):after {
-  content: "\f105";
+  // content: "\f105";
+  display: none !important;
   position: absolute;
   //   right: 20px;
   //   top: 10px;
+  top: 27px;
   font-size: 14px;
+  color: #fff;
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   padding-right: 3px;
@@ -69,7 +78,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #a6ff35;
+  // background-color: #a6ff35;
   bottom: 10px;
 }
 .hori-selector .right {
@@ -85,7 +94,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #5161ce;
+  // background-color: rgba(53, 14, 255, 0.24);;
 }
 .hori-selector .right:before {
   bottom: 0;
@@ -98,6 +107,77 @@
 .dropdown-item {
   color: #fff;
 }
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar.scrolled {
+  background: linear-gradient(
+    to right,
+    rgb(233, 241, 255),
+    rgb(181, 210, 254)
+  ); /* Change the background color when scrolling */
+}
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: #a6ff35;
+  border-radius: 1px;
+  opacity: 1;
+  right: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
 @media (min-width: 992px) {
   .navbar-expand-custom {
     -ms-flex-flow: row nowrap;

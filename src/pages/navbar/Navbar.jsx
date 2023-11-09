@@ -66,7 +66,7 @@ function Navbar() {
       } else {
         navbarCollapse.classList.add("show");
       }
-      // navbarCollapse.slideToggle(300);
+
       setTimeout(() => {
         test();
       });
@@ -105,18 +105,22 @@ function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">
-          Navbar
+        <a class="navbar-brand navbar-logo" href="/">
+        <img src={logo} className="logo-img" />
         </a>
         <button
-          class="navbar-toggler"
-          type="button"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          toggle
-        </button>
+            type="button"
+            className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="toggler-icon top-bar"></span>
+            <span className="toggler-icon middle-bar"></span>
+            <span className="toggler-icon bottom-bar"></span>
+          </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <div class="hori-selector">
@@ -124,12 +128,12 @@ function Navbar() {
               <div class="right"></div>
             </div>
             <li class="nav-item">
-              <NavLink class="nav-link" to="/home">
+              <NavLink class="nav-link" to="/">
                 {/* <img src={homeIcon} width={20} className="navbar-icon" /> */}
                 HOME
               </NavLink>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item ">
               <NavLink class="nav-link" to="/about-us">
                 {/* <img src={aboutUsIcon} width={20} className="navbar-icon" /> */}
                 ABOUT US
@@ -139,7 +143,7 @@ function Navbar() {
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="/programs/hackathon"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"

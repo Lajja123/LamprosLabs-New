@@ -16,6 +16,7 @@
   width: 100%;
   padding: 50px 0px;
   min-width: 300px;
+  position: relative;
 }
 .section1-bgImg {
   width: 731px;
@@ -38,7 +39,7 @@
   width: 90%;
   min-width: 900px;
   position: absolute;
-  top: 40%;
+  top: 25%;
   right: 0;
   height: 40vh;
   left: 0px;
@@ -246,7 +247,7 @@
   font-weight: 600;
   line-height: 174.523%; /* 62.828px */
   letter-spacing: 0.9px;
-  width: 409.922px;
+  // width: 409.922px;
   flex-shrink: 0;
   text-transform: uppercase;
   margin: 0 auto;
@@ -269,7 +270,7 @@
   color: #060028;
   text-align: center;
   font-family: "Josefin Sans";
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 168.023%;
@@ -284,7 +285,7 @@
   text-transform: uppercase;
   border: none;
   color: #000;
-  text-shadow: 5px 2px 8px rgba(0, 0, 0, 0.73);
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
   font-family: "Josefin Sans";
   font-size: 12px;
   font-style: normal;
@@ -361,11 +362,19 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  width: 90%;
+  background: #d9d9d9;
+  display: flex;
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 80%;
   font-family: "Josefin Sans";
-  line-height: 109.02%;
+  align-items: center;
+  top: -35px;
+  font-family: "Josefin Sans";
+  line-height: 130.02%;
   letter-spacing: 0.065em;
-  padding: 10px;
   color: #1a0f5e;
   text-align: left;
 }
@@ -374,7 +383,7 @@
   font-weight: 600;
   font-size: 20px;
   font-family: "Josefin Sans";
-  line-height: 154.02%;
+  line-height: 130%;
   padding: 10px;
   letter-spacing: 0.065em;
   color: #1a0f5e;
@@ -398,6 +407,21 @@ input [type="radio"]:checked::after {
 /* .....................mobile responsive ..................... */
 
 @media only screen and (max-width: 1024px) {
+  .section1-bgImg-main {
+    width: 100%;
+    padding: 0px; 
+    min-width: 300px;
+    position: relative;
+}
+.home-subtitle {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 20px 150px;
+  line-height: 140%;
+}
   #section1-button {
     font-size: 17px;
     line-height: 154.02%;
@@ -433,7 +457,7 @@ input [type="radio"]:checked::after {
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
-    margin: 50px 0px;
+    margin-top: 120px;
     justify-content: center;
   }
   .faq-accordion-main {
@@ -442,25 +466,30 @@ input [type="radio"]:checked::after {
   }
   .section1-bgImg {
     width: 500px;
-    height: 465px;
+    height: 425px;
   }
   .section1-heading {
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 600;
     letter-spacing: 15px;
-    line-height: 8vh;
+    
   }
   .section1-position-main {
     margin: 0 auto;
     height: 35vh;
-    top: 35%;
+    top: 25%;
     min-width: 800px;
   }
   .section2-Img {
-    width: 500px;
-    height: 430px;
-    min-width: 300px;
-  }
+    width: 433px;
+    height: 343px;
+    min-width: 330px;
+}
+.section2-button{
+  margin-top: 15px
+  ;
+} 
+
   #section2-button {
     font-size: 12px;
     font-weight: 600;
@@ -475,21 +504,26 @@ input [type="radio"]:checked::after {
     letter-spacing: 1px;
   }
   .homepage-secion2-main {
-    margin-top: 50px;
+    margin: 100px 0px;
   }
   .section3-card {
     padding: 40px 50px;
+    width: 600px;
+    height: 370px;
+  }
+  #carouselExampleControls{
+    width: 100% !important;
   }
   .section3-card-title {
     letter-spacing: 3px;
-
+font-size: 30px;
     font-weight: 400;
   }
   .section3-card-desc {
-    font-size: 19px;
-    padding: 20px 0px;
+    font-size: 18px;
+    padding: 10px 0px;
     width: 80%;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 2px;
     margin: 0;
   }
@@ -499,8 +533,8 @@ input [type="radio"]:checked::after {
     line-height: 157.02%;
     letter-spacing: 0.2rem;
     color: #1a0f5e;
-    width: 185px;
-    height: 50px;
+    width: 190px;
+    height: 55px;
     padding: 15px 20px;
   }
 
@@ -528,23 +562,24 @@ input [type="radio"]:checked::after {
   .accordion-icon {
     width: 70px;
     height: 70px;
-    padding: 20px;
+    padding: 15px;
   }
   .accordion-ans {
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 109.02%;
-    letter-spacing: 0.065em;
+    font-size: 17px;
+    line-height: 130.02%;
+    letter-spacing: 0.060em;
     color: #1a0f5e;
     text-align: left;
+    width: 100%;
   }
   .accordion-que {
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 154.02%;
-    letter-spacing: 0.065em;
+    font-size: 17px;
+    line-height: 130.02%;
+    letter-spacing: 0.050em;
     color: #1a0f5e;
     text-align: left;
   }
@@ -559,9 +594,7 @@ input [type="radio"]:checked::after {
   }
 }
 @media only screen and (max-width: 768px) {
-  .homepage-secion1-main {
-    margin-top: 50px !important;
-  }
+ 
   .section1-position-main {
     min-width: 500px;
     padding-left: 0px !important;
@@ -572,28 +605,30 @@ input [type="radio"]:checked::after {
     align-items: flex-start;
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 100px 0;
     width: 100%;
     flex-direction: row-reverse;
     position: relative;
   }
   .section2-Img {
-    width: 300px;
+    width: 250px;
     position: absolute;
-    z-index: -1;
+   
     left: 55%;
     height: fit-content;
-    top: -15%;
-    min-width: 300px;
+    top: -10%;
+    min-width: 250px;
   }
   .homepage-secion1-main {
     width: 100%;
+    padding-top: 70px ;
   }
   .home-ml-pera {
     font-size: 17px;
-    line-height: 3.5vh;
+    line-height: 4vh;
     text-align: left;
     width: 100%;
+    margin: 10px 0px;
     letter-spacing: 1px;
   }
   #section1-button {
@@ -619,12 +654,13 @@ input [type="radio"]:checked::after {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 10px;
-    line-height: 7vh;
+    line-height: 8vh;
   }
   .section2-pera {
     font-size: 17px;
-    line-height: 3.5vh;
-    width: 65%;
+    line-height: 4vh;
+    width: 55%;
+    margin: 0px;
     text-align: left;
     letter-spacing: 1px;
   }
@@ -640,9 +676,9 @@ input [type="radio"]:checked::after {
     margin-top: 20px;
   }
   .section2-flex {
-    width: 75%;
+    width: 85%;
     display: flex;
-    margin: 0px 53px;
+    margin: 0px 50px;
     text-align: center;
     flex-direction: column;
     align-items: flex-start;
@@ -669,13 +705,13 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 100%;
+    width: 435px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    // min-height: 43vh;
-    justify-content: center;
-  }
+    justify-content: space-evenly;
+}
 
   .sectio4-title {
     font-size: 2rem;
@@ -685,14 +721,21 @@ input [type="radio"]:checked::after {
   .section3-card-title {
     letter-spacing: 4px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
   }
-
+  .section2-button {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 130%;
+    padding: 20px 30px;
+    letter-spacing: 0.46em;
+}
   .section3-card-desc {
     font-size: 15px;
     padding: 6px 0px;
-    width: 80%;
-    line-height: 25px;
+    width: 100%;
+    line-height: 20px;
+    letter-spacing: 2px;
   }
   .section3-card-button {
     font-size: 10px;
@@ -723,6 +766,13 @@ input [type="radio"]:checked::after {
     bottom: 51% !important;
     right: 25px;
     z-index: 20;
+  }
+  .item {
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
   }
   .accordion-icon {
     width: 60px;
@@ -765,67 +815,117 @@ input [type="radio"]:checked::after {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 9px;
-    line-height: 5vh;
+    line-height: 7vh;
   }
+  .homepage-secion1-main {
+    width: 100%;
+    padding-top: 55px;
+}
+.homepage-secion2-main {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+  width: 100%;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.item {
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+}
   .home-subtitle {
     color: #ffffff;
     font-size: 15px;
     letter-spacing: 1px;
     margin: 0 auto;
-    padding: 20px 70px;
+    padding: 15px 40px;
     line-height: 150%;
   }
   .section1-bgImg {
     width: 350px;
-    height: 350px;
+    height: 315px;
   }
+  .color-change-text {
+    color: #07006a;
+    background-color: #a6ff35;
+    padding-left: 1.8rem;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.section2-flex {
+  width: 85%;
+  display: flex;
+  margin: 0px 50px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
   .section1-position-main {
     min-width: 400px;
     padding-left: 0px !important;
     height: 24vh;
-    top: 32%;
+    top: 25%;
   }
   .section2-Img {
+    width: 250px;
     position: absolute;
-    z-index: -1;
-
-    left: 46%;
-    top: -17%;
-    min-width: 300px;
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
-  }
-  .section2-Img {
-    top: 5%;
-    min-width: 150px;
-    position: absolute;
-    z-index: -1;
-    left: 52%;
-    rotate: 26deg;
-    transform: scaleX(-1);
+    left: 53%;
+    
     height: fit-content;
-    flex-shrink: 0;
-    width: 150px;
-
-    flex-shrink: 0;
-  }
-  .section2-pera1 {
+    top: -8%;
+    min-width: 264px;
+}
+.section3-card {
+  padding: 30px 30px;
+  width: 400px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section2-Img {
+  top: -3%;
+  min-width: 219px;
+  position: absolute;
+  left: 58%;
+  display: none;
+  rotate: -15deg;
+  /* transform: scaleX(-1); */
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-shrink: 0;
+  width: 150px;
+  flex-shrink: 0;
+}
+.section2-pera1 {
+  font-size: 15px;
+  line-height: 3.8vh;
+  width: 100%;
+  color: #fff;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+  .section2-pera {
     font-size: 15px;
-    line-height: 3.3vh;
-    width: 60%;
-    color: #fff;
-    text-align: left;
-
-    letter-spacing: 1.5px;
-  }
+    line-height: 3.8vh;
+    width: 55%;
+    // margin: 0px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
   .home-ml-pera1 {
     font-size: 15px;
-    line-height: 3.3vh;
+    line-height: 3.8vh;
     width: 100%;
     color: #fff;
-    text-align: left;
-    letter-spacing: 1.5px;
+    text-align: justify;
+    letter-spacing: 1px;
   }
   .accordion-icon {
     width: 70px;
@@ -885,14 +985,18 @@ input [type="radio"]:checked::after {
   .section3-card-desc {
     font-size: 14px;
     padding: 6px 0px;
-    width: 75%;
+    width: 100%;
     letter-spacing: 1px;
     line-height: 25px;
   }
   .section3-card-title {
     letter-spacing: 3px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
+    width: 100%;
+  }
+  .section3-card-button{
+    margin: 0px;
   }
 }
 
@@ -914,7 +1018,7 @@ input [type="radio"]:checked::after {
   }
   .hide-for-web {
     display: block !important;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .home-subtitle {
     color: #ffffff;
@@ -922,13 +1026,21 @@ input [type="radio"]:checked::after {
     letter-spacing: 1px;
     /* width: 200px; */
     margin: 0 auto;
-    padding: 15px 50px;
+    padding: 10px 20px;
     line-height: 150%;
   }
   .homepage-secion1-main {
     width: 100%;
-    margin: 50px 0px;
+    
   }
+  .color-change-text {
+    color: #07006a;
+    background-color: #a6ff35;
+    padding-left: 1.8rem;
+    padding: 7px;
+    font-weight: 400;
+    font-size: 15px;
+}
   .section1-bgImg-main {
     width: 100%;
     min-width: 300px;
@@ -937,7 +1049,7 @@ input [type="radio"]:checked::after {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 4px;
-    line-height: 4vh;
+    line-height: 6vh;
   }
   #section1-button {
     font-size: 10px;
@@ -951,8 +1063,8 @@ input [type="radio"]:checked::after {
   .section1-position-main {
     min-width: 200px;
     padding-left: 0px !important;
-    height: 16vh;
-    top: 24% !important;
+    height: 26vh;
+    top: 22% !important;
   }
 
   .icon-style {
@@ -970,22 +1082,12 @@ input [type="radio"]:checked::after {
     z-index: 20;
   }
   .section2-Img {
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 4%;
-    min-width: 152px;
-    rotate: 26deg;
-    width: 172px;
-
-    transform: scaleX(-1);
-    height: 200px;
-    flex-shrink: 0;
+   display: none;
   }
   .section2-pera1 {
     font-size: 13px;
     line-height: 3vh;
-    width: 60%;
+    width: 100%;
     color: #fff;
     text-align: left;
     letter-spacing: 1px;
@@ -1019,14 +1121,15 @@ input [type="radio"]:checked::after {
     text-align: justify;
   }
   .section2-flex {
-    width: 85%;
+    // width: 105%;
     margin: 0px auto;
     text-align: center;
+    margin: 0px 30px;
   }
   .homepage-secion2-main {
     margin-top: 30px;
     display: block;
-    margin: 50px 0px;
+    margin: 40px 0px;
   }
   #section2-button {
     font-size: 10px;
@@ -1066,19 +1169,19 @@ input [type="radio"]:checked::after {
   }
 
   .section3-card-desc {
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     padding: 0px 0px;
     width: 100%;
-    line-height: 23px;
-    letter-spacing: 2px;
+    line-height: 15px;
+    letter-spacing: 1px;
   }
   .section3-card-title {
-    letter-spacing: 3px;
-    font-size: 14px;
+    letter-spacing: 1px;
+    font-size: 12px;
     text-align: center;
-    font-weight: 400;
-    line-height: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
   .section3-card-xcompute {
     text-transform: uppercase;
@@ -1092,7 +1195,8 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 100%;
+    width: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1104,8 +1208,13 @@ input [type="radio"]:checked::after {
     line-height: 100.02%;
     letter-spacing: 3px;
     color: #1a0f5e;
+    width: 150px;
+    height: 40px;
     padding: 13px 15px;
     margin-top: 12px;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    width: 8%;
   }
   .sectio4-title {
     font-size: 2.5rem;
@@ -1168,7 +1277,7 @@ input [type="radio"]:checked::after {
     margin-top: 100px;
   }
   .homepage-secion3-main-template {
-    margin: 50px 0px;
+    margin: 60px 0px;
   }
   .homepage-secion3-main-template .rec-carousel {
     width: 95% !important;
