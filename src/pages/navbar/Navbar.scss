@@ -28,7 +28,7 @@
   float: left;
 }
 #navbarSupportedContent ul li a {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   font-size: 15px;
   display: block;
@@ -38,7 +38,7 @@
   position: relative;
 }
 #navbarSupportedContent > ul > li.active > a {
-  color: #0A11B5;
+  color: #0a11b5;
   background-color: transparent;
   transition: all 0.7s;
 }
@@ -112,6 +112,7 @@
   height: 20px;
   position: relative;
   transition: 0.5s ease-in-out;
+  left: -20px;
 }
 
 .navbar-toggler,
@@ -230,5 +231,13 @@
   .hori-selector .right:before {
     bottom: -25px;
     left: -25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-img {
+    width: 200px;
+    height: 45px;
+    flex-shrink: 0;
   }
 }
