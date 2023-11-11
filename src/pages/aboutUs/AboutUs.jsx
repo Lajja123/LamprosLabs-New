@@ -363,7 +363,7 @@ function AboutUs() {
               <div className="about-box-sec4">
                 <div
                   className="about-sec4-box-heading"
-                  style={{ width: "202px", margin: "0 auto" }}
+                  
                 >
                   Global Workshops
                 </div>

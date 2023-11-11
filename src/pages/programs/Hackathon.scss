@@ -1256,13 +1256,14 @@
     .hack-sec1-bg img {
       width: 350px;
       flex-shrink: 0;
+      left: 5%;
     }
     .sec1-box {
       display: none !important;
     }
     .sec1-box-ml {
       display: block !important;
-      padding: 25px 40px;
+      padding: 25px 27px;
       flex-shrink: 0;
       border-radius: 50px;
       border: 1px solid rgba(255, 255, 255, 0);
@@ -1312,7 +1313,7 @@
       color: #fff;
       text-align: center;
       text-shadow: 0px 4px 36px rgba(0, 0, 0, 0.53);
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans";
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -1368,7 +1369,7 @@
       text-transform: uppercase;
     }
     .sec3-box1 {
-      border-radius: 110px 110px 0px 0px;
+      border-radius: 70px 70px 0px 0px;
       border: 1px solid #a6ff35;
       background: linear-gradient(
         91deg,
@@ -1381,8 +1382,8 @@
       flex-shrink: 0;
     }
     .sec3-box2 {
-      border-bottom-right-radius: 118px;
-      border-bottom-left-radius: 118px;
+      border-bottom-right-radius: 70px;
+      border-bottom-left-radius: 70px;
       border: 1px solid #a6ff35;
       background: rgba(0, 0, 0, 0.22);
       padding: 20px 30px;
@@ -1439,6 +1440,7 @@
       flex-shrink: 0;
       margin: 15px;
       padding: 15px;
+      width: 80%;
       border: none;
       color: #000;
       text-align: center;

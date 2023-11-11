@@ -1295,8 +1295,8 @@
     }
     .dao-sec1-flex1 {
       margin: 0;
-      padding-left: 36px;
-      width: 75%;
+      padding: 0px 36px;
+      width: 100%;
       position: relative;
       margin-bottom: 3rem;
       margin-top: 3rem;
@@ -1307,13 +1307,24 @@
       top: -100px;
       right: -33.25%;
     }
+    .dao-box-pera1 {
+      color: #fff;
+      text-align: left;
+      padding: 18px 0px;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      list-style-type: "-";
+      line-height: 150.023%;
+      letter-spacing: 1.2px;
+  }
     .dao-box-heading {
       color: #a6ff35;
-      text-align: center;
-      font-size: 18px;
+      text-align: left;
+      font-size: 15px;
       font-style: normal;
       font-weight: 600;
-      line-height: 150.023%;
+      line-height: 130.023%;
       letter-spacing: 1.1px;
       border-radius: 22px;
       background: linear-gradient(
@@ -1324,15 +1335,16 @@
       -webkit-backdrop-filter: blur(2px);
       width: 278px;
       backdrop-filter: blur(2px);
-      padding: 15px 0px;
+      padding: 15px;
     }
     .we-envision-a {
       color: #fff;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150.023%;
-      letter-spacing: 1.9px;
+      text-align: justify;
+      line-height: 130.023%;
+      letter-spacing: 1px;
     }
   
     .mobile-heading-left-image {

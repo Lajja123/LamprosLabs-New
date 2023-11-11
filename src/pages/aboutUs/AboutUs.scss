@@ -597,20 +597,33 @@
 
   .aboutsec-pera-box {
     bottom: 7rem;
-    padding: 2rem;
+    padding: 3rem;
   }
-
+  .section3-aboutUs {
+    // padding-bottom: 0rem !important;
+    padding-top: 2rem;
+}
+.section4-aboutUs{
+  margin: 0px;
+}
   .sec2-about-pera-vision {
     margin-top: 4rem;
   }
   .sec2-about-pera-mission {
     margin-top: 4rem;
   }
-
+.sec3-about-pera{
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 2px;
+}
   /* Section 3 */
   .sec3-about-img1-div {
     top: 38%;
   }
+  .sec4-about-heading{
+  margin-bottom: 20px !important;
+}
 
   .sec3-img-heading {
     letter-spacing: 15px;
@@ -619,18 +632,43 @@
 
   /* Section 4 */
   .sec4-about-heading {
-    font-size: 2.3rem;
+    font-size: 2rem;;
+    letter-spacing: 7px;
+    color: #0ff;
   }
 
   .about-box-sec4 {
-    width: 100%;
+    width: 85%;
+    margin-bottom: 3rem;
+    height: 160px;
   }
   .aboutImg {
-    // width: 100%;
+    width: 80%;
     right: 0;
     position: relative;
     transform: rotate(-53.738deg);
   }
+  .union1 {
+    height: 80%;
+ 
+}
+.about-sec4-box-heading {
+  text-align: left;
+  font-size: 25px;
+  padding: 0;
+}
+.about-sec4-box-pera {
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.about-sec4-box-heading {
+letter-spacing: 2px;
+padding-bottom: 5px;
+}
+.pb-sm-5{
+  padding-bottom: 0rem !important;
+}
 }
 
 @media only screen and (max-width: 576px) {
@@ -691,12 +729,12 @@
 
   /* Section4 */
   .sec4-about-heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .union1 {
-    height: 75%;
-    padding-top: 1rem;
+    height: 67%;
+    // padding-top: 1rem;
   }
 
   .about-box-sec4 {
@@ -726,14 +764,16 @@
   }
 
   .union1 {
-    height: 70%;
-    padding-top: 2.8rem;
-  }
+    height: 67% !important;
+}
 
   .about-sec4-box-pera {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
-
+  .about-sec4-box-heading {
+    font-size: 22px;
+    padding-bottom: 0.5rem;
+}
   .about-box-sec4 {
     margin-bottom: 2rem;
   }
@@ -744,12 +784,16 @@
     left: -140px;
     width: 18rem;
   }
+  .section1-card-desc {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
   .sec3-about-heading {
     font-size: 15px;
     letter-spacing: 2.4px;
   }
   .about-sec1-box {
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
   .aboutsec-vision {
     width: 75%;
@@ -768,6 +812,7 @@
   .about-box-sec4 {
     margin-bottom: 1.5rem;
     padding-left: 1rem;
+    width: 100%;
   }
   .sec2-about-pera-vision {
     margin-top: 5rem;
@@ -779,6 +824,7 @@
     font-size: 14px;
     line-height: 140%;
   }
+  
   .aboutsec-mission {
     width: 75%;
     height: 9rem;
@@ -816,13 +862,14 @@
     margin: 0 auto;
   }
   .about-sec4-box-heading {
-    font-size: 1.5rem;
+    font-size: 20px;
     letter-spacing: 1px;
     padding: 10px 20px;
   }
   .about-sec4-box-pera {
     padding: 0px 20px;
     letter-spacing: 1px;
-    line-height: 140%;
+    line-height: 130%;
+    font-size: 14px;
   }
 }
