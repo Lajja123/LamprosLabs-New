@@ -14,20 +14,36 @@ import Footer from "../footer/Footer";
 import aboutImg2 from "../../assets/images/about-img2.png";
 import journey from "../../assets/images/journey-img.png";
 import journey1 from "../../assets/images/journey1.png";
+import ScrollBtn from "../../components/ScrollBtn"
+import Slide from 'react-reveal/Slide';
 
 function AboutUs() {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+
   return (
     <div className="aboutUs-main-bg">
       <Navbar />
-      <div className="aboutUs-main" smooth={true} duration={200}>
+      <ScrollBtn
+        section1Ref={section1Ref}
+        section2Ref={section2Ref}
+        section3Ref={section3Ref}
+      />
+      <div className="aboutUs-main"   ref={section1Ref}
+        smooth={true}
+        duration={200}>
         <section className="section1-aboutUs py-sm-5 py-3">
           <div className="aboutImg-main-div">
             <img src={aboutImg} alt="" className="aboutImg" />
           </div>
 
           <div className="aboutUs-section1-card px-sm-5 px-3">
+          <Slide bottom duration={2000} distance="50px">
             <div className="aboutUs-title pb-3">About Us</div>
+            </Slide>
 
+            <Slide bottom duration={2000} distance="50px">
             <div className="about-sec1-box">
               <p className="aboutUs-section1-card-desc">
                 In the vibrant world of blockchain, Lampros Labs stands as a
@@ -61,10 +77,13 @@ function AboutUs() {
                 influential.
               </p>
             </div>
+            </Slide>
+
           </div>
         </section>
 
-        <section className="section2-aboutUs">
+      <section className="section2-aboutUs">
+        <Slide bottom duration={2000} distance="50px">
           <div className="aboutsec-flex-main justify-content-around py-lg-2 pb-lg-5">
             <div className="aboutsec-flex col-lg-5 col-10">
               <div className="aboutsec-vision-div">
@@ -78,12 +97,13 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-
             <div className="vision-img col-5 d-none d-lg-block">
               <img src={vision}></img>
             </div>
           </div>
+          </Slide>
 
+          <Slide bottom duration={2000} distance="50px">
           <div className="aboutsec-flex-main justify-content-around py-lg-2">
             <div className="vision-img  col-lg-5 d-none d-lg-block">
               <img src={mission}></img>
@@ -103,13 +123,16 @@ function AboutUs() {
               </div>
             </div>
           </div>
-        </section>
+        </Slide>
+      </section>
 
         <section
           className="section3-aboutUs pb-5 d-none d-lg-block"
+          ref={section2Ref}
           smooth={true}
           duration={200}
         >
+        <Slide bottom duration={2000} distance="50px">
           <div className="about-sec3-flex1">
             <div className="sec3-about-img1-div">
               <img className="sec3-about-img1" src={blockchain}></img>
@@ -127,6 +150,7 @@ function AboutUs() {
               </p>
             </div>
           </div>
+        </Slide>
 
           <div className="about-img-flex py-2">
             <div className="about-sec3-hero col-6">
@@ -134,6 +158,7 @@ function AboutUs() {
               <div className="sec3-img-heading">Our Ethos</div>
             </div>
             <div className="py-3">
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-sec3-flex2 py-2">
                 <div className="sec3-about-img1-div">
                   <img className="sec3-about-img1" src={idea}></img>
@@ -148,6 +173,9 @@ function AboutUs() {
                   </p>
                 </div>
               </div>
+            </Slide>
+
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-sec3-flex3 py-5">
                 <div className="sec3-about-img1-div">
                   <img className="sec3-about-img1" src={blockchainImg}></img>
@@ -163,7 +191,9 @@ function AboutUs() {
                   </p>
                 </div>
               </div>
+            </Slide>
 
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-sec3-flex4 py-3">
                 <div className="sec3-about-img1-div">
                   <img className="sec3-about-img1" src={technology}></img>
@@ -180,9 +210,11 @@ function AboutUs() {
                   </p>
                 </div>
               </div>
+            </Slide>
             </div>
           </div>
 
+          <Slide bottom duration={2000} distance="50px">
           <div className="about-sec3-flex1">
             <div className="sec3-about-img1-div">
               <img className="sec3-about-img1" src={website}></img>
@@ -200,19 +232,24 @@ function AboutUs() {
               </p>
             </div>
           </div>
+          </Slide>
         </section>
 
         <section
           className="section3-aboutUs pb-5 d-lg-none"
+          ref={section3Ref}
           smooth={true}
           duration={200}
         >
+          <Slide bottom duration={2000} distance="50px">
           <div className="sec3-img-heading">Our Ethos</div>
+          </Slide> 
 
           <div style={{ position: "relative" }}>
             <img src={aboutImg2} className="about-img2"></img>
           </div>
           <div className="py-5">
+          <Slide bottom duration={2000} distance="50px">
             <div className="about-sec3-flex1-res">
               <div className="sec3-about-blockflex">
                 <div className="sec3-about-img1-div">
@@ -233,7 +270,8 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-
+          </Slide>
+          <Slide bottom duration={2000} distance="50px">
             <div className="about-sec3-flex1-res">
               <div className="sec3-about-blockflex">
                 <div className="sec3-about-img1-div">
@@ -250,7 +288,8 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-
+          </Slide>
+          <Slide bottom duration={2000} distance="50px">
             <div className="about-sec3-flex1-res">
               <div className="sec3-about-blockflex">
                 <div className="sec3-about-img1-div">
@@ -269,7 +308,8 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-
+          </Slide>
+          <Slide bottom duration={2000} distance="50px">
             <div className="about-sec3-flex1-res">
               <div className="sec3-about-blockflex">
                 <div className="sec3-about-img1-div">
@@ -289,7 +329,8 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-
+          </Slide>
+          <Slide bottom duration={2000} distance="50px">
             <div className="about-sec3-flex1-res">
               <div className="sec3-about-blockflex">
                 <div className="sec3-about-img1-div">
@@ -310,15 +351,19 @@ function AboutUs() {
                 </div>
               </div>
             </div>
+          </Slide>
           </div>
         </section>
 
         <section
           className="section4-aboutUs pb-sm-5"
+          ref={section3Ref}
           smooth={true}
           duration={200}
         >
+          <Slide bottom duration={2000} distance="50px">
           <h1 className="sec4-about-heading pb-4">Our Web3 Journey</h1>
+          </Slide>
 
           <div className="d-flex d-lg-inline">
             <div className="d-none d-lg-inline">
@@ -330,6 +375,7 @@ function AboutUs() {
             </div>
 
             <div className="about-sec4-main-box-flex">
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-box-sec4">
                 <div className="about-sec4-box-heading">
                   Hackathon Highlights
@@ -339,7 +385,8 @@ function AboutUs() {
                   imprints across diverse blockchains.
                 </div>
               </div>
-
+            </Slide>
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-box-sec4">
                 <div className="about-sec4-box-heading">
                   Journey from Web2 to Web3
@@ -349,7 +396,8 @@ function AboutUs() {
                   turning passion into web3 expertise.
                 </div>
               </div>
-
+            </Slide>
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-box-sec4">
                 <div className="about-sec4-box-heading">
                   Opportunities at Lampros
@@ -359,7 +407,8 @@ function AboutUs() {
                   earn in the world of web3.
                 </div>
               </div>
-
+            </Slide>
+            <Slide bottom duration={2000} distance="50px">
               <div className="about-box-sec4">
                 <div
                   className="about-sec4-box-heading"
@@ -372,6 +421,7 @@ function AboutUs() {
                   and skill refinement.
                 </div>
               </div>
+            </Slide>
             </div>
           </div>
         </section>

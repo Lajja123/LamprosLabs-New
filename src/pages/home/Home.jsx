@@ -8,21 +8,29 @@ import Navbar from "../navbar/Navbar";
 import FAQ from "../../components/Faq";
 import { question } from "../../components/FaqApi";
 import Footer from "../footer/Footer";
+import ScrollBtn from "../../components/ScrollBtn"
+import Slide from 'react-reveal/Slide';
 
 function Home() {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+
   return (
     <>
       <div className="lmplab-homepage-main-bg">
         <Navbar />
         <div className="scroll-top">
+
           <section
             className="homepage-secion1-main"
+            ref={section1Ref}
             smooth={true}
             duration={200}
           >
             <div className="section1-bgImg-main">
               <img className="section1-bgImg" src={section1Img}></img>
-
+              <Slide bottom duration={2000} distance="50px">
               <div className="section1-position-main">
                 <h1 className="section1-heading">The Beacon</h1>
                 <h1 className="section1-heading">
@@ -34,16 +42,20 @@ function Home() {
                   Cultivating the Future of Web3
                 </div>
               </div>
+              </Slide>
             </div>
           </section>
 
           <section
             className="homepage-secion2-main "
+            ref={section2Ref}
             smooth={true}
             duration={200}
           >
             <img className="section2-Img" src={section2Img}></img>
             <div className="section2-flex">
+
+              <Slide bottom duration={2000} distance="50px">
               <div className="hide-for-mobile">
                 <p className="section2-pera">
                   In the vibrant world of blockchain, Lampros Labs stands as a
@@ -61,6 +73,9 @@ function Home() {
                   an integral part of our digital tapestry.
                 </p>
               </div>
+              </Slide>
+
+              <Slide bottom duration={2000} distance="50px">
               <div className="hide-for-web">
                 <p className="section2-pera1">
                   In the vibrant world of blockchain, Lampros Labs stands as a
@@ -77,6 +92,7 @@ function Home() {
                   an integral part of our digital tapestry.
                 </p>
               </div>
+              </Slide>
 
               <Link to="/about-Us">
                 <button id="button-7" className="section2-button">
@@ -91,9 +107,11 @@ function Home() {
 
           <section
             className="homepage-secion3-main-template"
+            ref={section3Ref}
             smooth={true}
             duration={200}
           >
+            <Slide bottom duration={1000} distance="50px">
             <div
               id="carouselExampleControls"
               class="carousel slide"
@@ -186,15 +204,22 @@ function Home() {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            </Slide>
           </section>
+
+          <ScrollBtn
+            section1Ref={section1Ref}
+            section2Ref={section2Ref}
+            section3Ref={section3Ref}
+          />
 
           <section
             className="homepage-secion4-main "
-            smooth={true}
-            duration={200}
           >
             <h1 className="sectio4-title">FAQS</h1>
+            
             <div className="faq-accordion-main">
+            <Slide bottom duration={2000} distance="50px">
               {question.map((faq) => (
                 <FAQ
                   key={faq.question}
@@ -202,8 +227,12 @@ function Home() {
                   answer={faq.answer}
                 />
               ))}
+              </Slide>
             </div>
+           
+
           </section>
+
         </div>
         <Footer />
       </div>

@@ -13,20 +13,31 @@ import daoFooterImg from "../../assets/images/dao-page-footer-img.png";
 import Navbar from "../navbar/Navbar";
 import daoline from "../../assets/images/daoline.png";
 import Footer from "../footer/Footer";
+import ScrollBtn from "../../components/ScrollBtn"
+import Slide from 'react-reveal/Slide';
 
 
 function DaoRoadmap() {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
 
   return (
     <div className="dao-main-bg">
       <Navbar />
+      <ScrollBtn
+        section1Ref={section1Ref}
+        section2Ref={section2Ref}
+        section3Ref={section3Ref}
+      />
       <div className="dao-roadmap">
         <div
           className="dao-sec1-main d-none d-md-flex"
+          ref={section1Ref}
           smooth={true}
           duration={200}
         >
-         
+          <Slide bottom duration={2000} distance="50px">
             <div className="dao-sec1-flex1">
               <div className="dao-roadmap2">DAO Roadmap</div>
               <div className="we-envision-a">
@@ -40,7 +51,7 @@ function DaoRoadmap() {
                 and community-driven entity.
               </div>
             </div>
-          
+          </Slide>
 
           <div className="dao-sec1-flex2">
             <img className="illustration-14-1" alt="" src={daoimg1} />
@@ -48,16 +59,19 @@ function DaoRoadmap() {
           </div>
         </div>
        
+        <Slide bottom duration={2000} distance="50px">
         <div className="lampros-labs-roadmap-container for-laptops d-none d-md-block">
-            <div  smooth={true} duration={200}>
+            <div   ref={section2Ref}
+          smooth={true}
+          duration={200}>
               Lampros Labs <span className="roadmap">Roadmap</span>
             </div>
             <div>to Becoming a DAO</div>
         </div>
-       
+       </Slide>
         <div className="d-md-none">
           <div className="dao-sec1-flex1">
-           
+          <Slide bottom duration={2000} distance="50px">
               <div className="dao-roadmap2">DAO Roadmap</div>
               <div className="we-envision-a">
                 We envision a future where Lampros Labs transforms into a
@@ -69,13 +83,13 @@ function DaoRoadmap() {
                 that will lead us to become a more collaborative, autonomous,
                 and community-driven entity.
               </div>
-          
+          </Slide>
             <img className="mobile-dao-img" alt="" src={daoimg7} />
           </div>
         </div>
         
         <div className="for-mobiles d-md-none">
-         
+        <Slide bottom duration={2000} distance="50px">
             <div className="lampros-labs-roadmap-container  ">
               <div>
                 Lampros Labs <br />
@@ -90,10 +104,12 @@ function DaoRoadmap() {
                 />
               </div>
             </div>
+        </Slide>
         </div>
 
         <div
           className="dao-sec2-main"
+          ref={section3Ref}
           smooth={true}
           duration={200}
         >
@@ -105,7 +121,7 @@ function DaoRoadmap() {
               alt=""
               src={daoimg3}
             />
-           
+            <Slide bottom duration={2000} distance="50px">
               <div className="dao-box1-main dao-box-style-left">
                 <div className="dao-box-heading">Foundation Phase</div>
                 <div>
@@ -116,7 +132,8 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-            
+            </Slide>
+            <Slide bottom duration={2000} distance="50px">
               <div className="dao-box2-main dao-box-style-left">
                 <div className="dao-box-heading">
                   Development & Design Phase
@@ -129,7 +146,8 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-           
+           </Slide>
+           <Slide bottom duration={2000} distance="50px">
               <div className="dao-box3-main custom-list dao-box-style-left">
                 <div className="dao-box-heading">Implementation Phase</div>
                 <div>
@@ -140,10 +158,10 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-          
+          </Slide>
           </div>
           <div className="dao-sec2-second">
-          
+          <Slide bottom duration={2000} distance="50px">
               <div className="dao-box4-main dao-box-style-right">
                 <div className="dao-box-heading">
                   Iteration & Enhancement Phase
@@ -156,7 +174,8 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-            
+           </Slide> 
+           <Slide bottom duration={2000} distance="50px">
               <div className="dao-box5-main dao-box-style-right">
                 <div className="dao-box-heading">
                   Full Decentralization Phase
@@ -169,7 +188,8 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-            
+            </Slide>
+            <Slide bottom duration={2000} distance="50px">
               <div className="dao-box6-main dao-box-style-right">
                 <div className="dao-box-heading">
                   Review & Future Prospects Phase
@@ -182,7 +202,7 @@ function DaoRoadmap() {
                   </ul>
                 </div>
               </div>
-         
+          </Slide>
 
             <div>
               <img
