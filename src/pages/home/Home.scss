@@ -298,7 +298,7 @@
 
 .homepage-secion4-main {
   width: 100%;
-  margin: 100px 0px;
+  margin: 150px 0px;
 }
 .sectio4-title {
   color: #a6ff35;
@@ -879,13 +879,13 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 400px;
-    height: 280px;
+    width: 313px;
+    height: 244px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-  }
+}
   .section2-Img {
     top: -3%;
     min-width: 219px;
@@ -901,8 +901,8 @@ input [type="radio"]:checked::after {
     flex-shrink: 0;
   }
   .section2-pera1 {
-    font-size: 15px;
-    line-height: 3.8vh;
+    font-size: 14px;
+    line-height: 130%;
     width: 100%;
     color: #fff;
     text-align: justify;
@@ -917,13 +917,27 @@ input [type="radio"]:checked::after {
     letter-spacing: 1px;
   }
   .home-ml-pera1 {
-    font-size: 15px;
-    line-height: 3.8vh;
+    font-size: 14px;
+    line-height: 130%;
     width: 100%;
     color: #fff;
     text-align: justify;
     letter-spacing: 1px;
   }
+  .section3-card-button {
+    font-size: 10px;
+    line-height: 114.02%;
+    letter-spacing: 0.2rem;
+    color: #1a0f5e;
+    padding: 15px 20px;
+    margin-top: 20px;
+    width: 165px;
+    height: 39px;
+}
+.faq-accordion-main {
+  width: 100%;
+  margin: 0 auto;
+}
   .accordion-icon {
     width: 70px;
     height: 60px;
@@ -946,18 +960,27 @@ input [type="radio"]:checked::after {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 154.02%;
+    line-height: 130.02%;
     color: #1a0f5e;
 
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
-    line-height: 154.023%;
-    letter-spacing: 0.65px;
+    letter-spacing: 1px;
     letter-spacing: 0.065em;
     color: #1a0f5e;
     text-align: left;
   }
+  .section1-card-desc {
+    font-size: 12px;
+    line-height: 130.023%;
+    letter-spacing: 1px;
+}
+.section1-aboutUs {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
   .faq-que-main {
     padding: 15px;
     font-size: 15px;
@@ -980,18 +1003,18 @@ input [type="radio"]:checked::after {
     display: block !important;
   }
   .section3-card-desc {
-    font-size: 14px;
+    font-size: 10px;
     padding: 6px 0px;
     width: 100%;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 15px;
   }
   .section3-card-title {
-    letter-spacing: 3px;
-    font-size: 16px;
+    letter-spacing: 1px;
+    font-size: 12px;
     font-weight: 600;
     width: 100%;
-  }
+}
   .section3-card-button {
     margin: 0px;
   }
@@ -1229,6 +1252,7 @@ input [type="radio"]:checked::after {
   .homepage-secion4-main {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 0px;
   }
   .accordion-icon {
     width: 40px;

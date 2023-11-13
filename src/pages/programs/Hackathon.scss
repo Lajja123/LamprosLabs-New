@@ -1288,7 +1288,7 @@
       font-style: normal;
       font-weight: 600;
       line-height: 174.523%;
-      letter-spacing: 9px;
+      letter-spacing: 5px;
       text-transform: uppercase;
     }
     .sec1-box-pera {
@@ -1334,7 +1334,7 @@
       flex-shrink: 0;
     }
     .sec2box-title {
-      text-align: left;
+      text-align: center;
       color: #1a0f5e;
       font-family: Josefin Sans;
       font-size: 16px;
@@ -1345,10 +1345,11 @@
     }
     .sec2box-pera {
       color: #1a0f5e;
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans";
       font-size: 12px;
       font-style: normal;
-      text-align: left;
+      text-align: center;
+      padding-bottom: 10px;
       font-weight: 400;
       line-height: 140.023%; /* 14.002px */
       letter-spacing: 0.75px;
@@ -1359,17 +1360,17 @@
       color: #fff;
       text-align: center;
       text-shadow: 0px 4px 36px rgba(0, 0, 0, 0.17);
-      font-family: Josefin Sans;
+      font-family:"Josefin Sans";
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
       margin: 30px;
-      line-height: 174.523%;
-      letter-spacing: 6.4px;
+      line-height: 134.523%;
+      letter-spacing: 3.4px;
       text-transform: uppercase;
     }
     .sec3-box1 {
-      border-radius: 70px 70px 0px 0px;
+      border-radius: 50px 50px 0px 0px;
       border: 1px solid #a6ff35;
       background: linear-gradient(
         91deg,
@@ -1382,11 +1383,11 @@
       flex-shrink: 0;
     }
     .sec3-box2 {
-      border-bottom-right-radius: 70px;
-      border-bottom-left-radius: 70px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
       border: 1px solid #a6ff35;
       background: rgba(0, 0, 0, 0.22);
-      padding: 20px 30px;
+      padding: 20px;
       margin: 0 auto;
     }
     .sec3-box-heading {
@@ -1417,12 +1418,15 @@
     .s3-date {
       color: #a6ff35;
       text-align: center;
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 600;
       line-height: 174.523%;
-      letter-spacing: 3.8px;
+      letter-spacing: 2px;
       text-transform: capitalize;
+    }
+    .hack-section4 {
+      padding: 0px !important;
     }
     .sec3-flex1 input {
       border-radius: 27px;
@@ -1459,14 +1463,14 @@
     .s4-heading {
       color: #00ffd1;
       text-align: center;
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans";
       font-size: 16px;
       font-style: normal;
       margin: 30px 0px;
       width: 100%;
       font-weight: 700;
-      line-height: 174.523%;
-      letter-spacing: 6.4px;
+      line-height: 134.523%;
+      letter-spacing: 3.4px;
       text-transform: uppercase;
     }
     .hack-section4 {
@@ -1491,12 +1495,12 @@
     .s4-pera {
       color: #fff;
       text-align: center;
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans";
       font-size: 12px;
       font-style: normal;
       font-weight: 600;
-      line-height: 154.523%;
-      letter-spacing: 3px;
+      line-height: 134.523%;
+      letter-spacing: 1px;
       text-transform: capitalize;
     }
   

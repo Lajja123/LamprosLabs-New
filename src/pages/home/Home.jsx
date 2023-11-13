@@ -19,6 +19,7 @@ function Home() {
   return (
     <>
       <div className="lmplab-homepage-main-bg">
+      {/* <div className="blob"></div> */}
         <Navbar />
         <div className="scroll-top">
 
@@ -45,6 +46,7 @@ function Home() {
               </Slide>
             </div>
           </section>
+          {/* <div className="blob1"></div> */}
 
           <section
             className="homepage-secion2-main "
@@ -111,7 +113,7 @@ function Home() {
             smooth={true}
             duration={200}
           >
-            <Slide bottom duration={1000} distance="50px">
+           
             <div
               id="carouselExampleControls"
               class="carousel slide"
@@ -204,7 +206,7 @@ function Home() {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            </Slide>
+            
           </section>
 
           <ScrollBtn

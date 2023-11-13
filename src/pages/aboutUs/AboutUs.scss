@@ -574,9 +574,14 @@
   }
 
   .aboutUs-section1-card-desc {
-    font-size: 1rem;
+    font-size: 12px;
+    left: 1px;
+    line-height: 130%;
+    
   }
-
+  .about-sec1-box{
+    padding: 3rem 2rem;
+  }
   /* Section 2 */
 
   .section2-aboutUs {
@@ -610,7 +615,7 @@
     margin-top: 4rem;
   }
   .sec2-about-pera-mission {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 .sec3-about-pera{
   font-size: 16px;
@@ -694,6 +699,8 @@ padding-bottom: 5px;
 
   .aboutsec-pera-box {
     border-radius: 4rem;
+    padding: 2rem;
+    font-size: 14px;
   }
 
   .aboutsec-mission {
@@ -705,7 +712,7 @@ padding-bottom: 5px;
 
   .sec3-img-heading {
     letter-spacing: 10px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .about-img2 {
@@ -840,7 +847,7 @@ padding-bottom: 5px;
   }
   .sec3-img-heading {
     letter-spacing: 10px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-left: 62px;
   }
   .section3-aboutUs {
