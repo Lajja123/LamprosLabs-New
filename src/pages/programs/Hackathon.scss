@@ -15,7 +15,18 @@
     flex-shrink: 0;
     position: relative;
     right: 25%;
+    animation: rotateAnimation 100s infinite linear;
   }
+
+@keyframes rotateAnimation {
+  /* Set the rotation angles */
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
   .sec1-box {
     padding: 80px;
     right: 80px;
@@ -978,9 +989,9 @@
   }
   @media only screen and (max-width: 575px) {
     .hack-sec1-bg img {
-      width: 400px;
+      width: 300px;
       position: relative;
-      left: 14%;
+      left: 20%;
     }
     .sec1-box-ml {
       display: block !important;
@@ -1013,8 +1024,8 @@
       color: #a6ff35;
       text-align: center;
       text-shadow: 0px 4px 36px #000;
-      font-family: Josefin Sans;
-      font-size: 20px;
+      font-family: "Josefin Sans";
+      font-size: 15px;
       font-style: normal;
       font-weight: 600;
       line-height: 174.523%; /* 34.905px */
@@ -1024,7 +1035,7 @@
     .sec1-box-pera {
       color: #fff;
       text-align: center;
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans";
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
@@ -1045,16 +1056,16 @@
       text-transform: uppercase;
     }
     .hack-section2 {
-      margin-top: 15%;
+      margin-top: 40%;
     }
     .hack-section3 {
-      margin: 10% 0px;
+      margin: 20% 0px;
     }
     .hack-section1 {
       margin-top: 15px;
     }
     .hack-section4 {
-      padding: 30px 0px !important;
+      // padding: 30px 0px !important;
     }
     .s4-heading {
       color: #00ffd1;
@@ -1121,7 +1132,7 @@
       text-transform: uppercase;
     }
     .sec3-box1 {
-      border-radius: 110px 110px 0px 0px;
+      border-radius: 70px 70px 0px 0px;
       border: 1px solid #a6ff35;
       background: linear-gradient(
         91deg,
@@ -1134,8 +1145,8 @@
       flex-shrink: 0;
     }
     .sec3-box2 {
-      border-bottom-right-radius: 118px;
-      border-bottom-left-radius: 118px;
+      border-bottom-right-radius: 70px;
+      border-bottom-left-radius: 70px;
       border: 1px solid #a6ff35;
       background: rgba(0, 0, 0, 0.22);
       padding: 40px;
@@ -1184,7 +1195,7 @@
       color: #000;
       text-align: center;
       width: 60%;
-      font-size: 12px;
+      font-size: 10px;
       font-style: normal;
       font-weight: 700;
       line-height: 174.523%;
@@ -1220,7 +1231,7 @@
       font-size: 12px;
       font-style: normal;
       font-weight: 600;
-      width: 80%;
+      width: 100%;
       padding: 20px 0px;
       line-height: 172.523%;
       letter-spacing: 3.2px;
@@ -1254,9 +1265,9 @@
       position: relative;
     }
     .hack-sec1-bg img {
-      width: 350px;
+      width: 270px;
       flex-shrink: 0;
-      left: 5%;
+      left: 20%;
     }
     .sec1-box {
       display: none !important;

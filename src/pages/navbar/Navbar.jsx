@@ -46,7 +46,7 @@ function Navbar() {
               horiSelector.style.top = itemPosNewAnimTop + "px";
               horiSelector.style.left = itemPosNewAnimLeft + "px";
               horiSelector.style.height = activeWidthNewAnimHeight + "px";
-              horiSelector.style.width = activeWidthNewAnimWidth + "px";
+              // horiSelector.style.width = activeWidthNewAnimWidth + "px";
             }
           });
         });
@@ -152,7 +152,7 @@ function Navbar() {
                 PROGRAMS
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
+                <li className="dropdown-list">
                   <NavLink class="dropdown-item" to="/programs/hackathon">
                     HACKATHON
                   </NavLink>

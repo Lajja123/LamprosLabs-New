@@ -134,9 +134,9 @@
     text-transform: uppercase;
   }
   .dao-roadmap-inner {
-    /* position: relative; */
-    top: 109px;
-    right: 0;
+    position: relative;
+    top:0;
+    right: 10px;
     height: 90.19rem;
   }
   .rectangle-div {
@@ -794,7 +794,7 @@
     .dao-box5-main {
       position: absolute;
       top: 38%;
-      right: -1%;
+      right: 0;
     }
   
     .dao-box6-main {
@@ -1160,7 +1160,7 @@
     .dao-box-heading {
       color: #a6ff35;
       text-align: center;
-      font-size: 18px;
+      font-size: 15px;
       font-style: normal;
       font-weight: 600;
       line-height: 150.023%;
@@ -1172,7 +1172,7 @@
         rgba(255, 255, 255, 0.14) 88.82%
       );
       -webkit-backdrop-filter: blur(2px);
-      width: 350px;
+      width: 300px;
       backdrop-filter: blur(2px);
       padding: 15px 0px;
     }
@@ -1180,7 +1180,7 @@
       color: #fff;
       text-align: left;
       padding: 18px 0px;
-      font-size: 16px;
+      font-size: 15px;
       font-style: normal;
       font-weight: 400;
       list-style-type: "-";
@@ -1302,12 +1302,14 @@
       position: relative;
       margin-bottom: 3rem;
       margin-top: 3rem;
+      
     }
   
     .mobile-dao-img {
       position: absolute;
       top: 0px;
       right: -33.25%;
+      display: none;
     }
     .dao-box-pera1 {
       color: #fff;
@@ -1381,7 +1383,7 @@
     }
     .dao-footer-img {
       position: absolute;
-      bottom: -20px;
+      bottom: -52px;
       right: -30px;
       width: 100px;
     }

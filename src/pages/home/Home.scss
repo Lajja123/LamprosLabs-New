@@ -20,15 +20,15 @@
 }
 .section1-bgImg {
   width: 731px;
-  height: 627px;
-  // animation: rotate 100s linear infinite;
+  transform: rotate(50deg);
+  /* Set animation properties */
+  animation: rotateAnimation 100s infinite linear;
 }
-@keyframes rotate {
+
+@keyframes rotateAnimation {
+  /* Set the rotation angles */
   0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
+    transform: rotate(50deg);
   }
   100% {
     transform: rotate(360deg);
@@ -610,7 +610,6 @@ input [type="radio"]:checked::after {
   .section2-Img {
     width: 250px;
     position: absolute;
-
     left: 55%;
     height: fit-content;
     top: -10%;
@@ -643,7 +642,6 @@ input [type="radio"]:checked::after {
   }
   .section1-bgImg-main {
     width: 100%;
-
     min-width: 300px;
     /* position: relative; */
   }
@@ -709,7 +707,6 @@ input [type="radio"]:checked::after {
     flex-direction: column;
     justify-content: space-evenly;
   }
-
   .sectio4-title {
     font-size: 2rem;
     letter-spacing: 10px;
@@ -812,7 +809,7 @@ input [type="radio"]:checked::after {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 9px;
-    line-height: 7vh;
+    line-height: 6vh;
   }
   .homepage-secion1-main {
     width: 100%;
@@ -822,7 +819,7 @@ input [type="radio"]:checked::after {
     align-items: flex-start;
     display: flex;
     justify-content: center;
-    margin: 70px 0;
+    margin: 60px 0;
     width: 100%;
     flex-direction: row-reverse;
     position: relative;
@@ -843,8 +840,8 @@ input [type="radio"]:checked::after {
     line-height: 150%;
   }
   .section1-bgImg {
-    width: 350px;
-    height: 315px;
+    width: 320px;
+    height: 280px;
   }
   .color-change-text {
     color: #07006a;
@@ -866,7 +863,7 @@ input [type="radio"]:checked::after {
     min-width: 400px;
     padding-left: 0px !important;
     height: 24vh;
-    top: 25%;
+    top: 20%;
   }
   .section2-Img {
     width: 250px;
@@ -954,7 +951,7 @@ input [type="radio"]:checked::after {
   }
   .homepage-secion4-main {
     width: 100%;
-    margin-top: 60px;
+    margin: 70px 0px;
   }
   .accordion-que {
     font-style: normal;
@@ -1285,8 +1282,8 @@ input [type="radio"]:checked::after {
     margin-bottom: 0;
   }
   .section1-bgImg {
-    width: 308px;
-    height: 264px;
+    width: 300px;
+    height: 255px;
   }
   .homepage-secion3-main-template-mobile {
     width: 100%;
