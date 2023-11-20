@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "../navbar/Navbar.scss";
 import logo from "../../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
@@ -9,6 +9,8 @@ import productsIcon from "../../assets/svgs/product.svg";
 import roadMap from "../../assets/svgs/Roadmap.svg";
 
 function Navbar() {
+  const dropdownRef = useRef(null);
+
   useEffect(() => {
     const test = () => {
       const tabsNewAnim = document.querySelector("#navbarSupportedContent");
@@ -71,12 +73,23 @@ function Navbar() {
         test();
       });
     };
+    const handleClickOutside = (event) => {
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      const isNavbarToggler = event.target.classList.contains("navbar-toggler");
+      const isNavbarCollapse =
+        event.target.classList.contains("navbar-collapse");
 
+      if (!isNavbarToggler && !isNavbarCollapse) {
+        navbarCollapse.classList.remove("show");
+      }
+    };
     // Initial test on page load
     test();
 
     // Attach event listeners
     window.addEventListener("resize", onResize);
+    window.addEventListener("click", handleClickOutside);
+
     const navbarToggler = document.querySelector(".navbar-toggler");
     if (navbarToggler) {
       navbarToggler.addEventListener("click", onNavbarTogglerClick);
@@ -85,6 +98,7 @@ function Navbar() {
     return () => {
       // Clean up event listeners on unmount if necessary
       window.removeEventListener("resize", onResize);
+      window.removeEventListener("click", handleClickOutside);
       if (navbarToggler) {
         navbarToggler.removeEventListener("click", onNavbarTogglerClick);
       }
@@ -121,7 +135,11 @@ function Navbar() {
           <span className="toggler-icon middle-bar"></span>
           <span className="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          // ref={dropdownRef}
+        >
           <ul class="navbar-nav ml-auto">
             <div class="hori-selector">
               <div class="left"></div>

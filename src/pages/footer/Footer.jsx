@@ -62,7 +62,7 @@ function Footer() {
         <img src={linkln} className="footer-icon"></img>
       </div>
       <p className="footer-copyright">
-        Copyright © 2022 Lampros labs | All rights reserved
+        Copyright © 2023 Lampros labs | All rights reserved
       </p>
     </div>
   );
