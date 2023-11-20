@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "../footer/Footer.scss";
-import facebook from "../../assets/images/fb.png";
-import insta from "../../assets/images/insta.png";
+import discord from "../../assets/images/discord.png";
+import twitter from "../../assets/images/twitter.png";
 import linkln from "../../assets/images/linkln.png";
 import call from "../../assets/images/call.png";
 import { Link } from "react-router-dom";
@@ -56,8 +56,8 @@ function Footer() {
       </div>
       {/* <div className="footer-border"></div> */}
       <div className="footer-icon-main">
-        <img src={insta} className="footer-icon"></img>
-        <img src={facebook} className="footer-icon"></img>
+        <img src={twitter} className="footer-icon"></img>
+        <img src={discord} className="footer-icon"></img>
         <img src={call} className="footer-icon"></img>
         <img src={linkln} className="footer-icon"></img>
       </div>

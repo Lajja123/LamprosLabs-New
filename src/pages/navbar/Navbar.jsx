@@ -106,21 +106,21 @@ function Navbar() {
     <div>
       <nav class="navbar navbar-expand-custom navbar-mainbg">
         <a class="navbar-brand navbar-logo" href="/">
-        <img src={logo} className="logo-img" />
+          <img src={logo} className="logo-img" />
         </a>
         <button
-            type="button"
-            className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="toggler-icon top-bar"></span>
-            <span className="toggler-icon middle-bar"></span>
-            <span className="toggler-icon bottom-bar"></span>
-          </button>
+          type="button"
+          className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="toggler-icon top-bar"></span>
+          <span className="toggler-icon middle-bar"></span>
+          <span className="toggler-icon bottom-bar"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <div class="hori-selector">
