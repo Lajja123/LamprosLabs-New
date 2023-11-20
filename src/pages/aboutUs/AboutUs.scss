@@ -577,9 +577,8 @@
     font-size: 12px;
     left: 1px;
     line-height: 130%;
-    
   }
-  .about-sec1-box{
+  .about-sec1-box {
     padding: 3rem 2rem;
   }
   /* Section 2 */
@@ -607,28 +606,28 @@
   .section3-aboutUs {
     // padding-bottom: 0rem !important;
     padding-top: 2rem;
-}
-.section4-aboutUs{
-  margin: 0px;
-}
+  }
+  .section4-aboutUs {
+    margin: 0px;
+  }
   .sec2-about-pera-vision {
     margin-top: 4rem;
   }
   .sec2-about-pera-mission {
     margin-top: 5rem;
   }
-.sec3-about-pera{
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 2px;
-}
+  .sec3-about-pera {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 2px;
+  }
   /* Section 3 */
   .sec3-about-img1-div {
     top: 38%;
   }
-  .sec4-about-heading{
-  margin-bottom: 20px !important;
-}
+  .sec4-about-heading {
+    margin-bottom: 20px !important;
+  }
 
   .sec3-img-heading {
     letter-spacing: 15px;
@@ -637,7 +636,7 @@
 
   /* Section 4 */
   .sec4-about-heading {
-    font-size: 2rem;;
+    font-size: 2rem;
     letter-spacing: 7px;
     color: #0ff;
   }
@@ -655,25 +654,24 @@
   }
   .union1 {
     height: 80%;
- 
-}
-.about-sec4-box-heading {
-  text-align: left;
-  font-size: 25px;
-  padding: 0;
-}
-.about-sec4-box-pera {
-  text-align: left;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.about-sec4-box-heading {
-letter-spacing: 2px;
-padding-bottom: 5px;
-}
-.pb-sm-5{
-  padding-bottom: 0rem !important;
-}
+  }
+  .about-sec4-box-heading {
+    text-align: left;
+    font-size: 25px;
+    padding: 0;
+  }
+  .about-sec4-box-pera {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .about-sec4-box-heading {
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+  .pb-sm-5 {
+    padding-bottom: 0rem !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -761,6 +759,9 @@ padding-bottom: 5px;
   .journey-image-div {
     margin-bottom: -15rem;
   }
+  .cursor {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 515px) {
@@ -772,7 +773,7 @@ padding-bottom: 5px;
 
   .union1 {
     height: 67% !important;
-}
+  }
 
   .about-sec4-box-pera {
     letter-spacing: 1px;
@@ -780,13 +781,19 @@ padding-bottom: 5px;
   .about-sec4-box-heading {
     font-size: 22px;
     padding-bottom: 0.5rem;
-}
+  }
   .about-box-sec4 {
     margin-bottom: 2rem;
+  }
+  .cursor {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 425px) {
+  .cursor {
+    display: none;
+  }
   .about-img2 {
     left: -140px;
     width: 18rem;
@@ -794,7 +801,7 @@ padding-bottom: 5px;
   .section1-card-desc {
     font-size: 15px;
     letter-spacing: 1px;
-}
+  }
   .sec3-about-heading {
     font-size: 15px;
     letter-spacing: 2.4px;
@@ -831,7 +838,7 @@ padding-bottom: 5px;
     font-size: 14px;
     line-height: 140%;
   }
-  
+
   .aboutsec-mission {
     width: 75%;
     height: 9rem;
@@ -846,8 +853,8 @@ padding-bottom: 5px;
     margin-top: 55px;
   }
   .sec3-img-heading {
-    letter-spacing: 10px;
-    font-size: 1.3rem;
+    letter-spacing: 8px;
+    font-size: 1.2rem;
     padding-left: 62px;
   }
   .section3-aboutUs {

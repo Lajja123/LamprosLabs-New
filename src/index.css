@@ -124,6 +124,9 @@ body {
     overflow: hidden;
     animation: liquid-gradient 3s ease-in-out infinite;
   }
+  .cursor {
+    display: none;
+  }
 }
 @media only screen and (max-width: 576px) {
   .blob1 {
@@ -162,6 +165,9 @@ body {
     height: 300px;
     overflow: hidden;
     animation: liquid-gradient 3s ease-in-out infinite;
+  }
+  .cursor {
+    display: none;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -214,6 +220,9 @@ body {
     top: 214%;
     animation: liquid-gradient 2s ease-in-out infinite;
   }
+  .cursor {
+    display: none;
+  }
 }
 @keyframes liquid-gradient {
   0% {
@@ -226,6 +235,7 @@ body {
     transform: translate(-100px, -50px) rotate(360deg);
   }
 }
+
 .cursor {
   background-color: #a6ff35;
   width: 20px;

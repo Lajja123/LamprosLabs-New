@@ -805,6 +805,9 @@ input [type="radio"]:checked::after {
 }
 
 @media only screen and (max-width: 575px) {
+  .cursor {
+    display: none;
+  }
   .section1-heading {
     font-size: 1.5rem;
     font-weight: 500;
@@ -882,7 +885,7 @@ input [type="radio"]:checked::after {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-}
+  }
   .section2-Img {
     top: -3%;
     min-width: 219px;
@@ -930,11 +933,11 @@ input [type="radio"]:checked::after {
     margin-top: 20px;
     width: 165px;
     height: 39px;
-}
-.faq-accordion-main {
-  width: 100%;
-  margin: 0 auto;
-}
+  }
+  .faq-accordion-main {
+    width: 100%;
+    margin: 0 auto;
+  }
   .accordion-icon {
     width: 70px;
     height: 60px;
@@ -972,12 +975,12 @@ input [type="radio"]:checked::after {
     font-size: 12px;
     line-height: 130.023%;
     letter-spacing: 1px;
-}
-.section1-aboutUs {
-  width: 100%;
-  position: relative;
-  margin-top: 50px;
-}
+  }
+  .section1-aboutUs {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+  }
   .faq-que-main {
     padding: 15px;
     font-size: 15px;
@@ -1011,13 +1014,16 @@ input [type="radio"]:checked::after {
     font-size: 12px;
     font-weight: 600;
     width: 100%;
-}
+  }
   .section3-card-button {
     margin: 0px;
   }
 }
 
 @media only screen and (max-width: 425px) {
+  .cursor {
+    display: none;
+  }
   .accordion-que {
     font-family: Josefin Sans;
     font-size: 12px;
