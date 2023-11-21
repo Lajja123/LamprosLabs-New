@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "../footer/Footer.scss";
 import discord from "../../assets/images/discord.png";
 import twitter from "../../assets/images/twitter.png";
-import linkln from "../../assets/images/linkln.png";
+import linkln from "../../assets/images/linkedin.png";
 import call from "../../assets/images/call.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";

@@ -15,7 +15,7 @@ function App() {
       // For example, you might fetch data using axios or the Fetch API
 
       // Simulating a delay
-      await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 4000));
 
       // Update the loading state to indicate that the content has loaded
       setIsLoading(false);
