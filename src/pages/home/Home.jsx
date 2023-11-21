@@ -131,6 +131,7 @@ function Home() {
               ref={section2Ref}
               smooth={true}
               duration={200}
+              infinite
             >
               <img className="section2-Img" src={section2Img}></img>
               <div className="section2-flex">
