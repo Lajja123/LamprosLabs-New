@@ -125,7 +125,6 @@ function Home() {
                 </div>
               </div>
             </section>
-            {/* <div className="blob1"></div> */}
 
             <section
               className="homepage-secion2-main "
@@ -157,7 +156,7 @@ function Home() {
                 </div>
 
                 <div className="hide-for-web">
-                  <Slide bottom duration={2000} distance="5px">
+                  <Slide bottom duration={2000} distance="50px">
                     <p className="section2-pera1">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -266,7 +265,6 @@ function Home() {
                     </div>
                   </div>
                 </div>
-
                 <button
                   class="carousel-control-prev"
                   type="button"
@@ -299,7 +297,6 @@ function Home() {
               section2Ref={section2Ref}
               section3Ref={section3Ref}
             />
-
             <section className="homepage-secion4-main ">
               <h1 className="sectio4-title">FAQS</h1>
 

@@ -25,23 +25,23 @@ function Navbar() {
           <span className="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto ">
             <div class="hori-selector">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <li class="nav-item">
+            <li class="nav-item three-d">
               <NavLink class="nav-link" to="/">
                 HOME
               </NavLink>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item three-d">
               <NavLink class="nav-link" to="/about-us">
                 ABOUT US
               </NavLink>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown three-d">
               <a
                 class="nav-link dropdown-toggle"
                 href="/programs/hackathon"
@@ -53,14 +53,14 @@ function Navbar() {
                 PROGRAMS
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li className="dropdown-list">
+                <li className="dropdown-list three-d">
                   <NavLink class="dropdown-item" to="/programs/hackathon">
                     HACKATHON
                   </NavLink>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item three-d">
               <NavLink class="nav-link" to="/dao-roadmap">
                 {/* <img src={roadMap} width={20} className="navbar-icon" /> */}
                 DAO ROADMAP

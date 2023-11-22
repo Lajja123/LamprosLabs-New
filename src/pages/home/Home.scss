@@ -1,4 +1,27 @@
 // ..........section 1............
+// .carousel-inner {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: visible;
+// }
+
+// .carousel-item {
+//   opacity: 0.1;
+//   transition: opacity 0.3s ease-in-out;
+//   display: flex;
+//   margin-right: 0px;
+// }
+
+// .carousel-item.active {
+//   opacity: 1;
+// }
+
+// .carousel-control-prev,
+// .carousel-control-next {
+//   opacity: 0.1;
+//   transition: opacity 0.3s ease-in-out;
+// }
 
 .lmplab-homepage-main-bg {
   background: url("../../assets/images/home-bg.png");
