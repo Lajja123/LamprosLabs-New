@@ -14,7 +14,7 @@
 
 .section1-bgImg-main {
   width: 100%;
-  padding: 50px 0px;
+  padding: 10px 0px;
   min-width: 300px;
   position: relative;
 }
@@ -158,7 +158,7 @@
   width: 100%;
   height: 100%;
   background: #fcffff;
-  right: -235px;
+  right: 235px;
   position: absolute;
   padding: 0;
   display: flex;
@@ -596,7 +596,7 @@ input [type="radio"]:checked::after {
     min-width: 500px;
     padding-left: 0px !important;
     height: 27vh;
-    top: 25%;
+    top: 20%;
   }
   .homepage-secion2-main {
     align-items: flex-start;
@@ -638,7 +638,7 @@ input [type="radio"]:checked::after {
   }
   .section1-bgImg {
     width: 400px;
-    height: 360px;
+    height: 340px;
   }
   .section1-bgImg-main {
     width: 100%;
@@ -649,7 +649,7 @@ input [type="radio"]:checked::after {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 10px;
-    line-height: 8vh;
+    line-height: 7vh;
   }
   .section2-pera {
     font-size: 17px;

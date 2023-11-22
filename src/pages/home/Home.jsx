@@ -109,8 +109,9 @@ function Home() {
             >
               <div className="section1-bgImg-main">
                 <img className="section1-bgImg" src={section1Img}></img>
-                <Slide bottom duration={2000} distance="50px">
-                  <div className="section1-position-main">
+
+                <div className="section1-position-main">
+                  <Slide bottom duration={2000} distance="5px">
                     <h1 className="section1-heading">The Beacon</h1>
                     <h1 className="section1-heading">
                       of <span className="color-change-text">Blockchain </span>
@@ -120,8 +121,8 @@ function Home() {
                       Driving Mainstream Adoption, Empowering Developers, and
                       Cultivating the Future of Web3
                     </div>
-                  </div>
-                </Slide>
+                  </Slide>
+                </div>
               </div>
             </section>
             {/* <div className="blob1"></div> */}
@@ -135,8 +136,8 @@ function Home() {
             >
               <img className="section2-Img" src={section2Img}></img>
               <div className="section2-flex">
-                <Slide bottom duration={2000} distance="50px">
-                  <div className="hide-for-mobile">
+                <div className="hide-for-mobile">
+                  <Slide bottom duration={2000} distance="50px">
                     <p className="section2-pera">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -152,11 +153,11 @@ function Home() {
                       we inch closer to a future where blockchain isn't just a
                       buzzword, but an integral part of our digital tapestry.
                     </p>
-                  </div>
-                </Slide>
+                  </Slide>
+                </div>
 
-                <Slide bottom duration={2000} distance="50px">
-                  <div className="hide-for-web">
+                <div className="hide-for-web">
+                  <Slide bottom duration={2000} distance="50px">
                     <p className="section2-pera1">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -171,17 +172,19 @@ function Home() {
                       we inch closer to a future where blockchain isn't just a
                       buzzword, but an integral part of our digital tapestry.
                     </p>
-                  </div>
-                </Slide>
+                  </Slide>
+                </div>
 
-                <Link to="/about-Us">
-                  <button id="button-7" className="section2-button">
-                    <div id="dub-arrow">
-                      <img src={arrow} />
-                    </div>
-                    Know more
-                  </button>
-                </Link>
+                <Slide bottom duration={2000} distance="50px">
+                  <Link to="/about-Us">
+                    <button id="button-7" className="section2-button">
+                      Know more
+                      <div id="dub-arrow">
+                        <img src={arrow} />
+                      </div>
+                    </button>
+                  </Link>
+                </Slide>
               </div>
             </section>
 

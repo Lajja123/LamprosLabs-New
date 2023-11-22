@@ -7,38 +7,29 @@ import Hackathon from "./pages/programs/Hackathon";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    // Simulate an asynchronous action, such as fetching data or other initialization
-    const fetchData = async () => {
-      // Your asynchronous code here
-      // For example, you might fetch data using axios or the Fetch API
-
-      // Simulating a delay
-      await new Promise((resolve) => setTimeout(resolve, 4000));
-
-      // Update the loading state to indicate that the content has loaded
-      setIsLoading(false);
-    };
-
-    // Call the fetchData function
-    fetchData();
+    // getCurrentWalletConnected();
+    // addWalleteListener();
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
+
   return (
     <div>
-      {isLoading ? (
-        // Loading animation
-        <div class="wavy">
-          <span style={{ "--i": 1 }}>L</span>
-          <span style={{ "--i": 2 }}>o</span>
-          <span style={{ "--i": 3 }}>a</span>
-          <span style={{ "--i": 4 }}>d</span>
-          <span style={{ "--i": 5 }}>i</span>
-          <span style={{ "--i": 6 }}>n</span>
-          <span style={{ "--i": 7 }}>g</span>
-          <span style={{ "--i": 8 }}>.</span>
-          <span style={{ "--i": 9 }}>.</span>
-          <span style={{ "--i": 10 }}>.</span>
+      {loading ? (
+        <div class="center">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
         </div>
       ) : (
         <div className="App">
