@@ -137,7 +137,7 @@ function Home() {
               <img className="section2-Img" src={section2Img}></img>
               <div className="section2-flex">
                 <div className="hide-for-mobile">
-                  <Slide bottom duration={2000} distance="50px">
+                  <Slide bottom duration={2000} distance="5px">
                     <p className="section2-pera">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -157,7 +157,7 @@ function Home() {
                 </div>
 
                 <div className="hide-for-web">
-                  <Slide bottom duration={2000} distance="50px">
+                  <Slide bottom duration={2000} distance="5px">
                     <p className="section2-pera1">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -175,7 +175,7 @@ function Home() {
                   </Slide>
                 </div>
 
-                <Slide bottom duration={2000} distance="50px">
+                <Slide bottom duration={2000} distance="5px">
                   <Link to="/about-Us">
                     <button id="button-7" className="section2-button">
                       Know more
