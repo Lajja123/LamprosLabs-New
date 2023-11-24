@@ -5,9 +5,29 @@ import logo from "../../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        // Clicked outside the navbar, close the menu
+        const navbarToggler = document.getElementById("navbarNavDropdown");
+        if (navbarToggler) {
+          navbarToggler.classList.remove("show");
+        }
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg " ref={navbarRef}>
         <a class="navbar-brand navbar-logo" href="/">
           <img src={logo} className="logo-img" />
         </a>

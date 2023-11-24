@@ -1,27 +1,4 @@
 // ..........section 1............
-// .carousel-inner {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   overflow: visible;
-// }
-
-// .carousel-item {
-//   opacity: 0.1;
-//   transition: opacity 0.3s ease-in-out;
-//   display: flex;
-//   margin-right: 0px;
-// }
-
-// .carousel-item.active {
-//   opacity: 1;
-// }
-
-// .carousel-control-prev,
-// .carousel-control-next {
-//   opacity: 0.1;
-//   transition: opacity 0.3s ease-in-out;
-// }
 
 .lmplab-homepage-main-bg {
   background: url("../../assets/images/home-bg.png");
@@ -144,6 +121,21 @@
 .section2-Img {
   width: 500px;
   height: 500px;
+  opacity: 0;
+  transform: scale(0.5); /* Initial zoom level */
+
+  /* Animation properties */
+  animation: fadeInAndZoom 5s forwards;
+}
+@keyframes fadeInAndZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .section2-button {
   background-color: #a6ff35;
@@ -218,13 +210,15 @@
 /* ..........section3 css............ */
 .homepage-secion3-main-template {
   margin: 0 auto;
-  margin-top: 150px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 .section3-card {
-  width: 645px;
+  width: 645px !important;
   padding: 50px;
   height: 400px;
-  display: flex;
+  display: flex !important;
   margin: 0 auto;
   align-items: center;
   flex-direction: column;
@@ -232,7 +226,7 @@
   flex-shrink: 0;
   border-radius: 45px;
   background: linear-gradient(117deg, #fcffff 1.47%, #a3ffff 98.65%);
-  box-shadow: 0px 0px 157px 0px rgba(0, 0, 0, 0.17);
+  // box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.17);
 }
 
 .homepage-secion3-main-template .rec .rec-pagination {
@@ -317,6 +311,54 @@
   letter-spacing: 4.72px;
 }
 
+.slick-list {
+  transform: none !important;
+  width: 60%;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}
+.center-slider .slick-slide {
+  opacity: 0.5;
+}
+.slick-slider {
+  width: 100% !important;
+}
+.slick-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+
+.slick-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.slick-dots {
+  position: absolute;
+  bottom: -50px !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 10px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #a6ff35 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* ...........section4 CSS........... */
 
 .homepage-secion4-main {
@@ -427,6 +469,11 @@ input [type="radio"]:checked::after {
   justify-content: flex-start;
 }
 
+/* Carousel.css */
+.custom-carousel {
+  overflow: visible !important; /* Override default styles */
+}
+
 /* .....................mobile responsive ..................... */
 
 @media only screen and (max-width: 1024px) {
@@ -529,7 +576,7 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 40px 50px;
-    width: 600px;
+    width: 600px !important;
     height: 370px;
   }
   #carouselExampleControls {
@@ -723,7 +770,7 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 435px;
+    width: 435px !important;
     height: 300px;
     display: flex;
     align-items: center;
@@ -902,7 +949,7 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 313px;
+    width: 313px !important;
     height: 244px;
     display: flex;
     align-items: center;
@@ -1240,13 +1287,19 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 300px;
+    width: 300px !important;
     height: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
     // min-height: 40vh;
     justify-content: space-evenly;
+  }
+  .slick-list {
+    transform: none !important;
+    width: 100%;
+    margin: 0 auto !important;
+    overflow: visible !important;
   }
   .section3-card-button {
     font-size: 10px;
@@ -1331,3 +1384,54 @@ input [type="radio"]:checked::after {
     margin: 80px 0px 0px 0px;
   }
 }
+// .wrapper {
+//   padding: 70px 0;
+// }
+// /* Default slide */
+// .center-slider .slick-slide {
+//   background-color: #b32532;
+//   color: #fff;
+//   height: 200px;
+//   margin: 0 15px 0 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transform: scale(0.8);
+//   transition: all 0.4s ease-in-out;
+// }
+// .center-slider .slick-slide,
+// .center-slider
+//   .slick-slide[aria-hidden="true"]:not(.slick-cloned)
+//   ~ .slick-cloned[aria-hidden="true"] {
+//   transform: scale(0.8, 0.8);
+//   transition: all 0.4s ease-in-out;
+// }
+
+// /* Active center slide (You can change anything here for cenetr slide)*/
+// .center-slider .slick-center,
+// .center-slider
+//   .slick-slide[aria-hidden="true"]:not([tabindex="-1"])
+//   + .slick-cloned[aria-hidden="true"] {
+//   transform: scale(1.1);
+//   background-color: #000000;
+// }
+// .center-slider .slick-current.slick-active {
+//   transform: scale(1.1);
+//   background-color: #000000;
+// }
+
+// .slick-next,
+// .slick-prev {
+//   z-index: 5;
+// }
+// .slick-next {
+//   right: 15px;
+// }
+// .slick-prev {
+//   left: 15px;
+// }
+// .slick-next:before,
+// .slick-prev:before {
+//   color: #000;
+//   font-size: 26px;
+// }

@@ -10,8 +10,30 @@ import { question } from "../../components/FaqApi";
 import Footer from "../footer/Footer";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleBeforeChange = (current, next) => {
+    setActiveIndex(next);
+  };
+  const slickSettings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: false,
+    dots: true,
+    speed: 300,
+    centerPadding: "20px",
+    infinite: true,
+    autoplaySpeed: 2000,
+    autoplay: false,
+    beforeChange: handleBeforeChange,
+  };
+
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
@@ -111,12 +133,11 @@ function Home() {
                 <img className="section1-bgImg" src={section1Img}></img>
 
                 <div className="section1-position-main">
-                  <Slide bottom duration={2000} distance="5px">
+                  <Slide bottom duration={1000} distance="5px">
                     <h1 className="section1-heading">The Beacon</h1>
                     <h1 className="section1-heading">
                       of <span className="color-change-text">Blockchain </span>
                     </h1>
-
                     <div className="home-subtitle">
                       Driving Mainstream Adoption, Empowering Developers, and
                       Cultivating the Future of Web3
@@ -134,29 +155,31 @@ function Home() {
               infinite
             >
               <img className="section2-Img" src={section2Img}></img>
+
               <div className="section2-flex">
                 <div className="hide-for-mobile">
-                  <Slide bottom duration={2000} distance="5px">
+                  <Slide bottom duration={2000} distance="10px">
                     <p className="section2-pera">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
                       and builders. Founded with a profound vision to seamlessly
                       merge blockchain technology with mainstream applications,
                       we've steadily grown into a robust community hub.
-                    </p>
-
+                    </p>{" "}
+                  </Slide>
+                  <Slide bottom duration={2000} distance="10px">
                     <p className=" home-ml-pera">
                       Our ethos is rooted in fostering growth – both of the
                       individual and the collective. With each project we
                       support, every developer we guide, and each event we host,
                       we inch closer to a future where blockchain isn't just a
                       buzzword, but an integral part of our digital tapestry.
-                    </p>
+                    </p>{" "}
                   </Slide>
                 </div>
 
                 <div className="hide-for-web">
-                  <Slide bottom duration={2000} distance="50px">
+                  <Slide duration={2000} distance="10px">
                     <p className="section2-pera1">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -174,7 +197,7 @@ function Home() {
                   </Slide>
                 </div>
 
-                <Slide bottom duration={2000} distance="5px">
+                <Slide bottom duration={2000} distance="10px">
                   <Link to="/about-Us">
                     <button id="button-7" className="section2-button">
                       Know more
@@ -193,7 +216,7 @@ function Home() {
               smooth={true}
               duration={200}
             >
-              <div
+              {/* <div
                 id="carouselExampleControls"
                 class="carousel slide"
                 data-bs-ride="carousel"
@@ -289,7 +312,66 @@ function Home() {
                   ></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+              </div> */}
+              <Slider {...slickSettings}>
+                <div className={activeIndex === 0 ? "slick-active" : ""}>
+                  <div className="section3-card">
+                    <h1 className="section3-card-title">Hack, Build, Learn</h1>
+
+                    <p className="section3-card-desc">
+                      Sharpen your skills with us. From high-octane hackathons
+                      to intensive bootcamps and enlightening cohorts, Lampros
+                      Labs is your ticket to deepening your web3 proficiency.
+                    </p>
+                    <Link to="/programs/hackathon">
+                      <button class="section3-card-button" id="button-7">
+                        <div id="dub-arrow">
+                          <img src={arrow} />
+                        </div>
+                        Know more
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className={activeIndex === 1 ? "slick-active" : ""}>
+                  <div className="section3-card">
+                    <h1 className="section3-card-title">Hack, Build, Learn</h1>
+
+                    <p className="section3-card-desc">
+                      Sharpen your skills with us. From high-octane hackathons
+                      to intensive bootcamps and enlightening cohorts, Lampros
+                      Labs is your ticket to deepening your web3 proficiency.
+                    </p>
+                    <Link to="/programs/hackathon">
+                      <button class="section3-card-button" id="button-7">
+                        <div id="dub-arrow">
+                          <img src={arrow} />
+                        </div>
+                        Know more
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className={activeIndex === 3 ? "slick-active" : ""}>
+                  <div className="section3-card">
+                    <h1 className="section3-card-title">Hack, Build, Learn</h1>
+
+                    <p className="section3-card-desc">
+                      Sharpen your skills with us. From high-octane hackathons
+                      to intensive bootcamps and enlightening cohorts, Lampros
+                      Labs is your ticket to deepening your web3 proficiency.
+                    </p>
+                    <Link to="/programs/hackathon">
+                      <button class="section3-card-button" id="button-7">
+                        <div id="dub-arrow">
+                          <img src={arrow} />
+                        </div>
+                        Know more
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </Slider>
             </section>
 
             <ScrollBtn
