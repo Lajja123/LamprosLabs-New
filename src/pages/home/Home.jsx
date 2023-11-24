@@ -335,31 +335,34 @@ function Home() {
                 </div>
                 <div className={activeIndex === 1 ? "slick-active" : ""}>
                   <div className="section3-card">
-                    <h1 className="section3-card-title">Hack, Build, Learn</h1>
+                    <h1 className="section3-card-title">From Labs to DAO</h1>
 
                     <p className="section3-card-desc">
-                      Sharpen your skills with us. From high-octane hackathons
-                      to intensive bootcamps and enlightening cohorts, Lampros
-                      Labs is your ticket to deepening your web3 proficiency.
+                      The Lampros vision isn't just here and now. We're laying
+                      the groundwork for a future Lampros DAO, where
+                      decentralization meets purposeful action.
                     </p>
                     <Link to="/programs/hackathon">
                       <button class="section3-card-button" id="button-7">
                         <div id="dub-arrow">
                           <img src={arrow} />
                         </div>
-                        Know more
+                        Join Us
                       </button>
                     </Link>
                   </div>
                 </div>
                 <div className={activeIndex === 3 ? "slick-active" : ""}>
                   <div className="section3-card">
-                    <h1 className="section3-card-title">Hack, Build, Learn</h1>
+                    <h1 className="section3-card-title">
+                      Workshops, Activities & More
+                    </h1>
 
                     <p className="section3-card-desc">
-                      Sharpen your skills with us. From high-octane hackathons
-                      to intensive bootcamps and enlightening cohorts, Lampros
-                      Labs is your ticket to deepening your web3 proficiency.
+                      Web3 is vast, and its potential is limitless. Through our
+                      curated sessions, workshops, and activities, we aim to
+                      draw in fresh talent, providing a launchpad for their web3
+                      ambitions.
                     </p>
                     <Link to="/programs/hackathon">
                       <button class="section3-card-button" id="button-7">
