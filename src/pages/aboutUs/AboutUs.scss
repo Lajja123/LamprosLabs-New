@@ -742,6 +742,9 @@
   .sec3-img-heading {
     letter-spacing: 10px;
     font-size: 1.2rem;
+    position: relative;
+    top: 0;
+    z-index: 1;
   }
 
   .about-img2 {
@@ -860,12 +863,12 @@
     width: 100%;
   }
   .sec2-about-pera-vision {
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 14px;
     line-height: 140%;
   }
   .sec2-about-pera-mission {
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 14px;
     line-height: 140%;
   }
@@ -887,6 +890,8 @@
     letter-spacing: 8px;
     font-size: 1.2rem;
     padding-left: 62px;
+    position: relative;
+    top: 0;
   }
   .section3-aboutUs {
     padding-bottom: 0rem !important;

@@ -114,8 +114,8 @@
   border-radius: 1px;
   opacity: 1;
   right: 30px;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
+  // transform: rotate(0deg);
+  // transition: 0.25s ease-in-out;
 }
 
 .middle-bar {
@@ -124,18 +124,18 @@
 /* when navigation is clicked */
 
 .navbar-toggler .top-bar {
-  margin-top: 0px;
-  transform: rotate(135deg);
+  margin-top: 10px;
+  transform: rotate(0deg);
 }
 
 .navbar-toggler .middle-bar {
-  opacity: 0;
+  opacity: 1;
   filter: alpha(opacity=0);
 }
 
 .navbar-toggler .bottom-bar {
-  margin-top: 0px;
-  transform: rotate(-135deg);
+  margin-top: -10px;
+  transform: rotate(0deg);
 }
 /* State when the navbar is collapsed */
 
