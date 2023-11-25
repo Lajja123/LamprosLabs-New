@@ -53,6 +53,16 @@
   position: relative;
   right: 2.5rem;
   transform: rotate(90deg);
+  animation: zoomInOut 4s infinite alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .about-sec1-box {
@@ -249,6 +259,22 @@
   transform: rotate(-30deg);
   position: relative;
   right: 125px;
+}
+.about-img2 {
+  animation-timeline: view();
+  animation-name: fadeInAndZoom;
+  animation-fill-mode: both;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+}
+@keyframes fadeInAndZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ............section4........... */
@@ -584,24 +610,25 @@
   /* Section 2 */
 
   .section2-aboutUs {
-    padding-top: 5rem;
+    padding-top: 8rem;
   }
 
   .aboutsec-vision {
-    width: 60%;
-    height: 10rem;
-    border-radius: 4rem;
+    width: 70%;
+    height: 12rem;
+    border-radius: 3rem;
   }
 
   .aboutsec-mission {
-    width: 60%;
-    height: 10rem;
-    border-radius: 4rem;
+    width: 70%;
+    height: 12rem;
+    border-radius: 3rem;
   }
 
   .aboutsec-pera-box {
-    bottom: 7rem;
+    bottom: 5rem;
     padding: 3rem;
+    border-radius: 3rem;
   }
   .section3-aboutUs {
     // padding-bottom: 0rem !important;
@@ -611,10 +638,10 @@
     margin: 0px;
   }
   .sec2-about-pera-vision {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .sec2-about-pera-mission {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .sec3-about-pera {
     font-size: 16px;
@@ -693,10 +720,12 @@
   .aboutsec-vision {
     border-radius: 3rem;
     font-size: 1.5rem;
+    width: 80%;
+    height: 10rem;
   }
 
   .aboutsec-pera-box {
-    border-radius: 4rem;
+    border-radius: 3rem;
     padding: 2rem;
     font-size: 14px;
   }
@@ -704,6 +733,8 @@
   .aboutsec-mission {
     border-radius: 3rem;
     font-size: 1.5rem;
+    width: 80%;
+    height: 10rem;
   }
 
   /* Section3 */

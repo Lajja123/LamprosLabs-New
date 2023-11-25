@@ -125,7 +125,13 @@
   transform: scale(0.5); /* Initial zoom level */
 
   /* Animation properties */
-  animation: fadeInAndZoom 5s forwards;
+  
+}
+.section2-Img{
+  animation-timeline: view();
+  animation-name: fadeInAndZoom;
+  animation-fill-mode: both;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
 }
 @keyframes fadeInAndZoom {
   0% {
@@ -405,6 +411,12 @@
   width: 80%;
   font-family: "Josefin Sans";
   align-items: center;
+  cursor: pointer;
+}
+.faq-que-main:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  border-left: 10px solid #1c08b7;
 }
 
 .faq-ans-main {
@@ -418,6 +430,7 @@
   font-family: "Josefin Sans";
   align-items: center;
   top: -35px;
+  cursor: pointer;
 }
 
 .faqsub.visible {
@@ -430,10 +443,11 @@
   background: #d9d9d9;
   display: flex;
   font-weight: 600;
-  padding: 30px;
+  padding: 0px 30px ;
+  padding-bottom: 20px;
   border-radius: 20px;
-  margin: 20px auto;
-  width: 80%;
+  // margin: 20px auto;
+  // width: 80%;
   font-family: "Josefin Sans";
   align-items: center;
   top: -35px;
@@ -442,6 +456,9 @@
   letter-spacing: 0.065em;
   color: #1a0f5e;
   text-align: left;
+}
+.accordion-icon-dummy{
+  opacity: 0;
 }
 .accordion-que {
   font-style: normal;
@@ -641,6 +658,7 @@ input [type="radio"]:checked::after {
     color: #1a0f5e;
     text-align: left;
     width: 100%;
+    padding: 10px 20px;
   }
   .accordion-que {
     font-style: normal;
@@ -660,6 +678,7 @@ input [type="radio"]:checked::after {
   .hide-for-web {
     display: none !important;
   }
+ 
 }
 @media only screen and (max-width: 768px) {
   .section1-position-main {
@@ -731,7 +750,13 @@ input [type="radio"]:checked::after {
   }
 
   .homepage-secion3-main-template {
-    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  
+  }
+  .slick-dots{
+    bottom: -30px;
   }
   #section2-button {
     font-size: 10px;
@@ -949,12 +974,15 @@ input [type="radio"]:checked::after {
   }
   .section3-card {
     padding: 30px 30px;
-    width: 313px !important;
+    width: 300px !important;
     height: 244px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .slick-list{
+    width: 80%;
   }
   .section2-Img {
     top: -3%;
@@ -1065,6 +1093,7 @@ input [type="radio"]:checked::after {
     letter-spacing: 0.065em;
     color: rgb(26, 15, 94);
     text-align: left;
+    padding: 10px 20px;
   }
   .hide-for-mobile {
     display: none;
@@ -1094,6 +1123,7 @@ input [type="radio"]:checked::after {
   .cursor {
     display: none;
   }
+
   .accordion-que {
     font-family: Josefin Sans;
     font-size: 12px;
@@ -1105,6 +1135,7 @@ input [type="radio"]:checked::after {
     letter-spacing: 0.065em;
     color: #1a0f5e;
     text-align: left;
+    padding: 10px 20px;
   }
   .hide-for-mobile {
     display: none;
@@ -1377,7 +1408,12 @@ input [type="radio"]:checked::after {
     margin-top: 100px;
   }
   .homepage-secion3-main-template {
-    margin: 60px 0px;
+    margin: 50px 0px;
+    padding: 40px 0px;
+    
+  }
+  .slick-dots{
+bottom: -30px !important;
   }
   .homepage-secion3-main-template .rec-carousel {
     width: 95% !important;

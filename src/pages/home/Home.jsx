@@ -10,6 +10,7 @@ import { question } from "../../components/FaqApi";
 import Footer from "../footer/Footer";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
+import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,8 +30,8 @@ function Home() {
     speed: 300,
     centerPadding: "20px",
     infinite: true,
-    autoplaySpeed: 2000,
-    autoplay: false,
+    autoplaySpeed: 3000,
+    autoplay: true,
     beforeChange: handleBeforeChange,
   };
 
@@ -133,7 +134,7 @@ function Home() {
                 <img className="section1-bgImg" src={section1Img}></img>
 
                 <div className="section1-position-main">
-                  <Slide bottom duration={1000} distance="5px">
+                  <Fade bottom duration={1000} distance="20px">
                     <h1 className="section1-heading">The Beacon</h1>
                     <h1 className="section1-heading">
                       of <span className="color-change-text">Blockchain </span>
@@ -142,7 +143,7 @@ function Home() {
                       Driving Mainstream Adoption, Empowering Developers, and
                       Cultivating the Future of Web3
                     </div>
-                  </Slide>
+                  </Fade>
                 </div>
               </div>
             </section>
@@ -157,17 +158,15 @@ function Home() {
               <img className="section2-Img" src={section2Img}></img>
 
               <div className="section2-flex">
-                <div className="hide-for-mobile">
-                  <Slide bottom duration={2000} distance="10px">
+                <div className="hide-for-mobile"> 
+                  <Fade bottom duration={3000} distance="30px">
                     <p className="section2-pera">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
                       and builders. Founded with a profound vision to seamlessly
                       merge blockchain technology with mainstream applications,
                       we've steadily grown into a robust community hub.
-                    </p>{" "}
-                  </Slide>
-                  <Slide bottom duration={2000} distance="10px">
+                    </p>
                     <p className=" home-ml-pera">
                       Our ethos is rooted in fostering growth – both of the
                       individual and the collective. With each project we
@@ -175,11 +174,11 @@ function Home() {
                       we inch closer to a future where blockchain isn't just a
                       buzzword, but an integral part of our digital tapestry.
                     </p>{" "}
-                  </Slide>
+                  </Fade>
                 </div>
 
                 <div className="hide-for-web">
-                  <Slide duration={2000} distance="10px">
+                <Fade bottom duration={3000} distance="30px">
                     <p className="section2-pera1">
                       In the vibrant world of blockchain, Lampros Labs stands as
                       a beacon, illuminating the path for innovators, dreamers,
@@ -194,10 +193,10 @@ function Home() {
                       we inch closer to a future where blockchain isn't just a
                       buzzword, but an integral part of our digital tapestry.
                     </p>
-                  </Slide>
+                  </Fade>
                 </div>
 
-                <Slide bottom duration={2000} distance="10px">
+                <Fade bottom duration={2000} distance="20px">
                   <Link to="/about-Us">
                     <button id="button-7" className="section2-button">
                       Know more
@@ -206,7 +205,7 @@ function Home() {
                       </div>
                     </button>
                   </Link>
-                </Slide>
+                </Fade>
               </div>
             </section>
 
@@ -313,6 +312,7 @@ function Home() {
                   <span class="visually-hidden">Next</span>
                 </button>
               </div> */}
+
               <Slider {...slickSettings}>
                 <div className={activeIndex === 0 ? "slick-active" : ""}>
                   <div className="section3-card">
@@ -383,10 +383,11 @@ function Home() {
               section3Ref={section3Ref}
             />
             <section className="homepage-secion4-main ">
+            <Fade bottom duration={2000} distance="2px">
               <h1 className="sectio4-title">FAQS</h1>
-
+            </Fade>
               <div className="faq-accordion-main">
-                <Slide bottom duration={2000} distance="50px">
+                <Fade bottom duration={2000} distance="30px">
                   {question.map((faq) => (
                     <FAQ
                       key={faq.question}
@@ -394,7 +395,7 @@ function Home() {
                       answer={faq.answer}
                     />
                   ))}
-                </Slide>
+                </Fade>
               </div>
             </section>
           </div>

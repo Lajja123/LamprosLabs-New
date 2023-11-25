@@ -7,7 +7,7 @@ import Hackathon from "./pages/programs/Hackathon";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     // getCurrentWalletConnected();
     // addWalleteListener();

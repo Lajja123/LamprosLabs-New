@@ -19,9 +19,10 @@ function FAQ({ question, answer }) {
           />
           <div className="accordion-que">{question}</div>
         </div>
-       
+        
+        {expanded && <div className="accordion-ans">{answer}</div>}
       </div>
-      {expanded && <div className="accordion-ans">{answer}</div>}
+    
     </div>
   );
 }
