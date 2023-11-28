@@ -2,7 +2,7 @@
 .aboutUs-main-bg {
   background: url("../../assets/images/about-bg.png");
   max-width: 100vw;
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   width: 100%;
   z-index: -1;

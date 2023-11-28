@@ -23,87 +23,7 @@ function AboutUs() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
-  const [timeoutId, setTimeoutId] = useState(null);
-
-  const fancyCursor = (e) => {
-    const halfCursorSize = 12;
-    const halfTrailSize = 40;
-    const scaleMin = 0.35;
-    const scaleMax = 1.0;
-
-    const finalX = e.pageX - halfCursorSize;
-    const finalY = e.pageY - halfCursorSize;
-    const finalTrailX = e.pageX - halfTrailSize;
-    const finalTrailY = e.pageY - halfTrailSize;
-
-    document.querySelector(
-      ".cursor"
-    ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMin})`;
-
-    setTimeout(() => {
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMin})`;
-    }, 100);
-
-    if (timeoutId !== null) {
-      window.clearTimeout(timeoutId);
-    }
-
-    const newTimeoutId = window.setTimeout(() => {
-      document.querySelector(
-        ".cursor"
-      ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMax})`;
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMax})`;
-    }, 250);
-
-    setTimeoutId(newTimeoutId);
-
-    document.querySelector(".cursor").style.opacity = "1";
-    document.querySelector(".cursor-trail").style.opacity = "1";
-  };
-
-  const cursorLoader = () => {
-    const cursorWrapper = document.querySelector(".cursor__wrapper");
-
-    if (cursorWrapper) {
-      cursorWrapper.addEventListener("mousemove", fancyCursor);
-      cursorWrapper.addEventListener(
-        "mouseleave",
-        () => {
-          document.querySelector(".cursor").style.opacity = "0";
-          document.querySelector(".cursor-trail").style.opacity = "0";
-        },
-        false
-      );
-
-      window.addEventListener("scroll", () => {
-        document.querySelector(".cursor").style.opacity = "0";
-        document.querySelector(".cursor-trail").style.opacity = "0";
-      });
-    }
-  };
-
-  useEffect(() => {
-    if (window.performance.navigation.type === 1) {
-      cursorLoader();
-    }
-    const animate = () => {
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    // Cleanup function
-    return () => {
-      window.removeEventListener("load", cursorLoader);
-    };
-  }, []);
-
   return (
-    <main class="main cursor__wrapper">
       <div className="aboutUs-main-bg">
         <Navbar />
         <ScrollBtn
@@ -168,7 +88,7 @@ function AboutUs() {
             
               <div className="aboutsec-flex-main justify-content-around py-lg-2 pb-lg-5">
                 <div className="aboutsec-flex col-lg-5 col-10">
-                <Fade bottom duration={2000} distance="50px">
+                <Fade bottom duration={1000} distance="50px">
                   <div className="aboutsec-vision-div">
                     <div className="aboutsec-vision">Vision</div>
                   </div>
@@ -181,7 +101,7 @@ function AboutUs() {
                   </div>
                   </Fade>
                 </div>
-                <Fade bottom duration={2000} distance="50px">  <div className="vision-img col-5 d-none d-lg-block">
+                <Fade bottom duration={1000} distance="50px">  <div className="vision-img col-5 d-none d-lg-block">
                   <img src={vision}></img>
                 </div>
                 </Fade>
@@ -190,7 +110,7 @@ function AboutUs() {
           
 
               <div className="aboutsec-flex-main justify-content-around py-lg-2">
-              <Fade bottom duration={2000} distance="50px">
+              <Fade bottom duration={1000} distance="50px">
                 <div className="vision-img  col-lg-5 d-none d-lg-block">
                   <img src={mission}></img>
                 </div>
@@ -198,7 +118,7 @@ function AboutUs() {
               
 
                 <div className="aboutsec-flex col-lg-5 col-10">
-                <Fade bottom duration={2000} distance="50px">
+                <Fade bottom duration={1000} distance="50px">
                   <div className="aboutsec-vision-div">
                     <div className="aboutsec-mission">Mission</div>
                   </div>
@@ -222,8 +142,8 @@ function AboutUs() {
             smooth={true}
             duration={200}
           >
-            <Fade left duration={2000} distance="50px">
-              <div className="about-sec3-flex1">
+         
+          <div className="about-sec3-flex1">
                 <div className="sec3-about-img1-div">
                   <img className="sec3-about-img1" src={blockchain}></img>
                 </div>
@@ -240,16 +160,14 @@ function AboutUs() {
                     to lead the charge.
                   </p>
                 </div>
-              </div>
-            </Fade>
-
+          </div>
+      
             <div className="about-img-flex py-2">
               <div className="about-sec3-hero col-6">
                 <img src={aboutImg2} className="about-img2"></img>
                 <div className="sec3-img-heading">Our Ethos</div>
-              </div>
+              </div>   
               <div className="py-3">
-              <Fade bottom duration={2000} distance="20px">
                   <div className="about-sec3-flex2 py-2">
                     <div className="sec3-about-img1-div">
                       <img className="sec3-about-img1" src={idea}></img>
@@ -266,9 +184,7 @@ function AboutUs() {
                       </p>
                     </div>
                   </div>
-                </Fade>
-
-                <Fade bottom duration={2000} distance="20px">
+               
                   <div className="about-sec3-flex3 py-5">
                     <div className="sec3-about-img1-div">
                       <img
@@ -288,9 +204,7 @@ function AboutUs() {
                       </p>
                     </div>
                   </div>
-                </Fade>
-
-                <Fade bottom duration={2000} distance="20px">
+                
                   <div className="about-sec3-flex4 py-3">
                     <div className="sec3-about-img1-div">
                       <img className="sec3-about-img1" src={technology}></img>
@@ -307,11 +221,11 @@ function AboutUs() {
                       </p>
                     </div>
                   </div>
-                </Fade>
+              
               </div>
             </div>
 
-            <Fade left duration={2000} distance="50px">
+            
               <div className="about-sec3-flex1">
                 <div className="sec3-about-img1-div">
                   <img className="sec3-about-img1" src={website}></img>
@@ -329,7 +243,7 @@ function AboutUs() {
                   </p>
                 </div>
               </div>
-            </Fade>
+          
           </section>
 
           <section
@@ -346,7 +260,6 @@ function AboutUs() {
               <img src={aboutImg2} className="about-img2"></img>
             </div>
             <div className="py-5">
-            <Fade left duration={2000} distance="50px">
                 <div className="about-sec3-flex1-res">
                   <div className="sec3-about-blockflex">
                     <div className="sec3-about-img1-div">
@@ -367,8 +280,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+            
                 <div className="about-sec3-flex1-res">
                   <div className="sec3-about-blockflex">
                     <div className="sec3-about-img1-div">
@@ -387,8 +299,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+              
                 <div className="about-sec3-flex1-res">
                   <div className="sec3-about-blockflex">
                     <div className="sec3-about-img1-div">
@@ -411,8 +322,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+              
                 <div className="about-sec3-flex1-res">
                   <div className="sec3-about-blockflex">
                     <div className="sec3-about-img1-div">
@@ -432,8 +342,6 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
                 <div className="about-sec3-flex1-res">
                   <div className="sec3-about-blockflex">
                     <div className="sec3-about-img1-div">
@@ -454,7 +362,6 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </Fade>
             </div>
           </section>
 
@@ -489,7 +396,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </Fade>
-                <Fade  duration={1000} delay={700}>
+                <Fade  duration={1000} delay={600}>
                   <div className="about-box-sec4">
                     <div className="about-sec4-box-heading">
                       Journey from Web2 to Web3
@@ -500,7 +407,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </Fade>
-                <Fade  duration={1000} delay={900}>
+                <Fade  duration={1000} delay={700}>
                   <div className="about-box-sec4">
                     <div className="about-sec4-box-heading">
                       Opportunities at Lampros
@@ -511,7 +418,7 @@ function AboutUs() {
                     </div>
                   </div>
                 </Fade>
-                <Fade  duration={1000} delay={1200}>
+                <Fade  duration={1000} delay={800}>
                   <div className="about-box-sec4">
                     <div className="about-sec4-box-heading">
                       Global Workshops
@@ -527,10 +434,7 @@ function AboutUs() {
           </section>
         </div>
         <Footer />
-      </div>
-      <span class="cursor"></span>
-      <span class="cursor-trail"></span>
-    </main>
+      </div>   
   );
 }
 export default AboutUs;

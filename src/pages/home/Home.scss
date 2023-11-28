@@ -3,8 +3,9 @@
 .lmplab-homepage-main-bg {
   background: url("../../assets/images/home-bg.png");
   max-width: 100vw;
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   width: 100%;
 }
 .homepage-secion1-main {

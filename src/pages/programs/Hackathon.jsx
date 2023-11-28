@@ -15,87 +15,7 @@ function Hackathon() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
-  const [timeoutId, setTimeoutId] = useState(null);
-
-  const fancyCursor = (e) => {
-    const halfCursorSize = 12;
-    const halfTrailSize = 40;
-    const scaleMin = 0.35;
-    const scaleMax = 1.0;
-
-    const finalX = e.pageX - halfCursorSize;
-    const finalY = e.pageY - halfCursorSize;
-    const finalTrailX = e.pageX - halfTrailSize;
-    const finalTrailY = e.pageY - halfTrailSize;
-
-    document.querySelector(
-      ".cursor"
-    ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMin})`;
-
-    setTimeout(() => {
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMin})`;
-    }, 100);
-
-    if (timeoutId !== null) {
-      window.clearTimeout(timeoutId);
-    }
-
-    const newTimeoutId = window.setTimeout(() => {
-      document.querySelector(
-        ".cursor"
-      ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMax})`;
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMax})`;
-    }, 250);
-
-    setTimeoutId(newTimeoutId);
-
-    document.querySelector(".cursor").style.opacity = "1";
-    document.querySelector(".cursor-trail").style.opacity = "1";
-  };
-
-  const cursorLoader = () => {
-    const cursorWrapper = document.querySelector(".cursor__wrapper");
-
-    if (cursorWrapper) {
-      cursorWrapper.addEventListener("mousemove", fancyCursor);
-      cursorWrapper.addEventListener(
-        "mouseleave",
-        () => {
-          document.querySelector(".cursor").style.opacity = "0";
-          document.querySelector(".cursor-trail").style.opacity = "0";
-        },
-        false
-      );
-
-      window.addEventListener("scroll", () => {
-        document.querySelector(".cursor").style.opacity = "0";
-        document.querySelector(".cursor-trail").style.opacity = "0";
-      });
-    }
-  };
-
-  useEffect(() => {
-    if (window.performance.navigation.type === 1) {
-      cursorLoader();
-    }
-    const animate = () => {
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    // Cleanup function
-    return () => {
-      window.removeEventListener("load", cursorLoader);
-    };
-  }, []);
-
   return (
-    <main class="main cursor__wrapper">
       <div className="inheri-main-bg">
         <Navbar />
         <ScrollBtn
@@ -128,10 +48,6 @@ function Hackathon() {
               </div>
           </div>
           </Fade>
-          
-          
-        
-
             <div className="col-xl-9 col-10 col-sm-9 sec1-box-ml-flex">
               <div className="sec1-box-title d-sm-none">
                 Unleash Your Blockchain Potential
@@ -145,7 +61,6 @@ function Hackathon() {
                 to challenge yourself and push boundaries.
               </div>
             </div>
-      
         </div>
 
         <div
@@ -220,7 +135,7 @@ function Hackathon() {
             <div className="sec3-heading">Upcoming Hackathons</div>
           </Fade></div>
           
-          <Fade bottom duration={2000} distance="50px">
+       
             <div style={{ margin: "50px 0px" }}>
               <div className="sec3-box1 col-10">
                 <div className="sec3-box-heading">Lampros Web3 Vision 2023</div>
@@ -246,17 +161,16 @@ function Hackathon() {
                 </div>
               </div>
             </div>
-          </Fade>
+         
         </div>
 
         <div
           className="hack-section4 col-9  mx-auto "
           style={{ margin: "15% 0px" }}
         >
-          <Fade bottom duration={2000} distance="50px">
+      
             <div className="s4-heading ">Hackathon Resources</div>
-          </Fade>
-          <Fade bottom duration={2000} distance="50px">
+   
             <div className="sec4-hack-res">
               <div className="sec4-flex1 ">
                 <div className="s4-res col-4">Workshops</div>
@@ -281,13 +195,10 @@ function Hackathon() {
                 </div>
               </div>
             </div>
-          </Fade>
+         
         </div>
         <Footer />
-      </div>
-      <span class="cursor"></span>
-      <span class="cursor-trail"></span>
-    </main>
+      </div>   
   );
 }
 

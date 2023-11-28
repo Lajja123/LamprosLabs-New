@@ -23,87 +23,8 @@ function DaoRoadmap() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
-  const [timeoutId, setTimeoutId] = useState(null);
-
-  const fancyCursor = (e) => {
-    const halfCursorSize = 12;
-    const halfTrailSize = 40;
-    const scaleMin = 0.35;
-    const scaleMax = 1.0;
-
-    const finalX = e.pageX - halfCursorSize;
-    const finalY = e.pageY - halfCursorSize;
-    const finalTrailX = e.pageX - halfTrailSize;
-    const finalTrailY = e.pageY - halfTrailSize;
-
-    document.querySelector(
-      ".cursor"
-    ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMin})`;
-
-    setTimeout(() => {
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMin})`;
-    }, 100);
-
-    if (timeoutId !== null) {
-      window.clearTimeout(timeoutId);
-    }
-
-    const newTimeoutId = window.setTimeout(() => {
-      document.querySelector(
-        ".cursor"
-      ).style.transform = `translate(${finalX}px, ${finalY}px) scale(${scaleMax})`;
-      document.querySelector(
-        ".cursor-trail"
-      ).style.transform = `translate(${finalTrailX}px, ${finalTrailY}px) scale(${scaleMax})`;
-    }, 250);
-
-    setTimeoutId(newTimeoutId);
-
-    document.querySelector(".cursor").style.opacity = "1";
-    document.querySelector(".cursor-trail").style.opacity = "1";
-  };
-
-  const cursorLoader = () => {
-    const cursorWrapper = document.querySelector(".cursor__wrapper");
-
-    if (cursorWrapper) {
-      cursorWrapper.addEventListener("mousemove", fancyCursor);
-      cursorWrapper.addEventListener(
-        "mouseleave",
-        () => {
-          document.querySelector(".cursor").style.opacity = "0";
-          document.querySelector(".cursor-trail").style.opacity = "0";
-        },
-        false
-      );
-
-      window.addEventListener("scroll", () => {
-        document.querySelector(".cursor").style.opacity = "0";
-        document.querySelector(".cursor-trail").style.opacity = "0";
-      });
-    }
-  };
-
-  useEffect(() => {
-    if (window.performance.navigation.type === 1) {
-      cursorLoader();
-    }
-    const animate = () => {
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    // Cleanup function
-    return () => {
-      window.removeEventListener("load", cursorLoader);
-    };
-  }, []);
-
   return (
-    <main class="main cursor__wrapper">
+
       <div className="dao-main-bg">
         <Navbar />
         <ScrollBtn
@@ -118,7 +39,7 @@ function DaoRoadmap() {
             smooth={true}
             duration={200}
           >
-            <Fade bottom duration={2000} distance="20px">
+            <Fade bottom duration={1000} distance="20px">
               <div className="dao-sec1-flex1">
                 <div className="dao-roadmap2">DAO Roadmap</div>
                 <div className="we-envision-a">
@@ -141,7 +62,7 @@ function DaoRoadmap() {
             </div>
           </div>
 
-          <Fade bottom duration={2000} distance="20px">
+          <Fade bottom duration={1000} distance="20px">
             <div className="lampros-labs-roadmap-container for-laptops d-none d-md-block">
               <div ref={section2Ref} smooth={true} duration={200}>
                 Lampros Labs <span className="roadmap">Roadmap</span>
@@ -151,7 +72,7 @@ function DaoRoadmap() {
           </Fade>
           <div className="d-md-none">
             <div className="dao-sec1-flex1">
-            <Fade bottom duration={2000} distance="20px">
+            <Fade bottom duration={1000} distance="20px">
                 <div className="dao-roadmap2">DAO Roadmap</div>
                 <div className="we-envision-a">
                   We envision a future where Lampros Labs transforms into a
@@ -169,7 +90,7 @@ function DaoRoadmap() {
           </div>
 
           <div className="for-mobiles d-md-none">
-            <Fade bottom duration={2000} distance="50px">
+            <Fade bottom duration={1000} distance="50px">
               <div className="lampros-labs-roadmap-container  ">
                 <div>
                   Lampros Labs <br />
@@ -197,7 +118,7 @@ function DaoRoadmap() {
           >
             <img className="dao-roadmap-inner" alt="" src={daoline} />
             <div className="dao-sec2-first">
-            <Fade left duration={2000} distance="50px">
+            <Fade left duration={1000} distance="50px">
               <img className="design-31-1" alt="" src={daoimg2} />
               <img
                 className="design-32-1 d-none d-md-block"
@@ -206,7 +127,7 @@ function DaoRoadmap() {
 
               />
               </Fade>
-                <Fade bottom duration={2000} distance="50px">
+               
                 <div className="dao-box1-main dao-box-style-left">
                   <div className="dao-box-heading">Foundation Phase</div>
                   <div>
@@ -217,8 +138,7 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="50px">
+             
                 <div className="dao-box2-main dao-box-style-left">
                   <div className="dao-box-heading">
                     Development & Design Phase
@@ -231,8 +151,7 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+
                 <div className="dao-box3-main custom-list dao-box-style-left">
                   <div className="dao-box-heading">Implementation Phase</div>
                   <div>
@@ -243,10 +162,10 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
+             
             </div>
             <div className="dao-sec2-second">
-            <Fade bottom duration={2000} distance="20px">
+            
                 <div className="dao-box4-main dao-box-style-right">
                   <div className="dao-box-heading">
                     Iteration & Enhancement Phase
@@ -259,8 +178,7 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+            
                 <div className="dao-box5-main dao-box-style-right">
                   <div className="dao-box-heading">
                     Full Decentralization Phase
@@ -273,8 +191,7 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="20px">
+              
                 <div className="dao-box6-main dao-box-style-right">
                   <div className="dao-box-heading">
                     Review & Future Prospects Phase
@@ -287,10 +204,9 @@ function DaoRoadmap() {
                     </ul>
                   </div>
                 </div>
-              </Fade>
-
-              <div>
-              <Fade bottom duration={2000} distance="20px">
+             
+            <div>
+              <Fade bottom duration={1000} distance="20px">
                 <img
                   className="dao-right-img-1 d-none d-md-block"
                   alt=""
@@ -320,9 +236,7 @@ function DaoRoadmap() {
         </div>
         <Footer />
       </div>
-      <span class="cursor"></span>
-      <span class="cursor-trail"></span>
-    </main>
+ 
   );
 }
 
