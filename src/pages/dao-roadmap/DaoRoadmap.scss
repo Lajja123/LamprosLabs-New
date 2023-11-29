@@ -12,9 +12,9 @@ li {
   padding: 0px 10px;
 }
 .dao-main-bg {
-  background: url("../../assets/images/daobg.png");
+  // background: url("../../assets/images/daobg.png");
   max-width: 100vw;
-  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -785,7 +785,7 @@ li {
   right: 0;
   width: 15%;
 }
-.dao-right-img-1  {
+.dao-right-img-1 {
   animation-timeline: view();
   animation-name: fadeInAndZoom;
   animation-fill-mode: both;
@@ -808,7 +808,7 @@ li {
   right: 0;
   width: 17%;
 }
-.dao-right-img-3  {
+.dao-right-img-3 {
   animation-timeline: view();
   animation-name: fadeInAndZoom;
   animation-fill-mode: both;
