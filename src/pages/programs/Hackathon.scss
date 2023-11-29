@@ -467,7 +467,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .inheri-main-bg {
-    background: url("../../assets/images/hack-bg.png");
+    // background: url("../../assets/images/hack-bg.png");
     max-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -718,11 +718,38 @@
   .sec1-box-ml {
     display: none !important;
   }
+  .blob11 {
+    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
+    filter: blur(180px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    width: 450px;
+    height: 500px;
+    top: 55%;
+    animation: liquid-gradient 3s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+.blob15{
+  display: none;
+}
+.blob13 {
+  border-radius: 100%;
+  filter: blur(180px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 500px;
+  height: 500px;
+  animation: liquid-gradient 3s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
 }
 
 @media only screen and (max-width: 768px) {
   .inheri-main-bg {
-    background: url("../../assets/images/hack-bg.png");
+    // background: url("../../assets/images/hack-bg.png");
     max-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -986,6 +1013,32 @@
   .sec1-box-ml {
     display: none !important;
   }
+  .blob11 {
+    background: linear-gradient(180deg, #00ffd1 60.4%, #00ffff 111.51%);
+    filter: blur(268px);
+    width: 300px;
+    height: 300px;
+    filter: blur(145px);
+    z-index: -1;
+    position: absolute;
+    left: 9%;
+    top: 60%;
+    animation: liquid-gradient 3s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+.blob13 {
+  border-radius: 100%;
+  filter: blur(180px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 308%;
+  background: #1a0f5e;
+  width: 350px;
+  height: 350px;
+  animation: liquid-gradient 3s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
 }
 @media only screen and (max-width: 575px) {
   .cursor {
@@ -1259,7 +1312,7 @@
     display: none;
   }
   .inheri-main-bg {
-    background: url("../../assets/images/hack-bg.png");
+    // background: url("../../assets/images/hack-bg.png");
     max-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1526,4 +1579,16 @@
     margin: 20px;
     align-items: center;
   }
+  .blob15 {
+    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
+    filter: blur(180px);
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    top: 300%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    animation: liquid-gradient 3s ease-in-out infinite;
+}
 }

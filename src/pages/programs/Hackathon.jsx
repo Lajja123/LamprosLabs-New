@@ -16,11 +16,13 @@ function Hackathon() {
 
   return (
     <div className="inheri-main-bg">
-      <div className="blob"></div>
-      <div className="blob1"></div>
-      <div className="blob2"></div>
-      <div className="blob3"></div>
-      <div className="blob4"></div>
+      
+      <div className="blob11"></div>
+      <div className="blob12"></div>
+      <div className="blob13"></div>
+      <div className="blob14"></div>
+      <div className="blob15"></div>
+      {/* <div className="blob16"></div> */}
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
