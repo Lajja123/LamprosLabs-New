@@ -654,6 +654,18 @@
   .aboutUs-title {
     font-size: 3rem;
   }
+  .blob14 {
+    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    filter: blur(180px);
+    position: absolute;
+    right: 120px;
+    top: 235%;
+    overflow: hidden;
+    animation: liquid-gradient 3s ease-in-out infinite;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -779,6 +791,19 @@
   }
   .pb-sm-5 {
     padding-bottom: 0rem !important;
+  }
+  .blob13 {
+    border-radius: 100%;
+    filter: blur(180px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 265%;
+    background: #1a0f5e;
+    width: 350px;
+    height: 350px;
+    animation: liquid-gradient 3s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
   .blob5 {
     animation: liquid-gradient 3s ease-in-out infinite;

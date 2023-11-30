@@ -25,11 +25,11 @@ function DaoRoadmap() {
 
   return (
     <div className="dao-main-bg">
-      <div className="blob"></div>
-      <div className="blob1"></div>
-      <div className="blob2"></div>
-      <div className="blob3"></div>
-      <div className="blob4"></div>
+      <div className="blob17"></div>
+      <div className="blob18"></div>
+      <div className="blob19"></div>
+      <div className="blob20"></div>
+      <div className="blob21"></div>
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}

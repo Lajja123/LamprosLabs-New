@@ -10,7 +10,7 @@ body {
     #0a11b5;
 }
 
-.blob12 {
+.blob17 {
   background: linear-gradient(180deg, #00ffb2 100%, #00ffff 100%);
   filter: blur(180.5px);
   width: 400px;
@@ -21,7 +21,7 @@ body {
   right: 0;
   animation: liquid-gradient 3s ease-in-out infinite;
 }
-.blob11 {
+.blob18 {
   background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
   filter: blur(180px);
   z-index: -1;
@@ -33,7 +33,7 @@ body {
   animation: liquid-gradient 3s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
 }
-.blob13 {
+.blob19 {
   border-radius: 100%;
   filter: blur(180px);
   z-index: -1;
@@ -57,10 +57,10 @@ body {
   top: 341%;
   animation: liquid-gradient 3s ease-in-out infinite;
 }
-.blob14 {
+.blob20 {
   background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
-  width: 450px;
-  height: 550px;
+  width: 350px;
+  height: 350px;
   z-index: -1;
   filter: blur(180px);
   position: absolute;
@@ -69,12 +69,12 @@ body {
   overflow: hidden;
   animation: liquid-gradient 3s ease-in-out infinite;
 }
-.blob15 {
+.blob21 {
   background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
   filter: blur(180px);
   position: absolute;
   z-index: -1;
-  right: 45%;
+  right: 61%;
   top: 350%;
   width: 400px;
   height: 400px;
@@ -96,7 +96,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .blob12 {
+  .blob17 {
     background: linear-gradient(180deg, #00ffb2 100%, #00ffff 100%);
     filter: blur(180.5px);
     width: 400px;
@@ -106,8 +106,8 @@ body {
     position: absolute;
     right: 0;
     animation: liquid-gradient 3s ease-in-out infinite;
-}
-  .blob11 {
+  }
+  .blob18 {
     background: linear-gradient(180deg, #00ffd1 60.4%, #00ffff 111.51%);
     filter: blur(268px);
     width: 300px;
@@ -120,7 +120,7 @@ body {
     animation: liquid-gradient 3s infinite alternate;
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
-  .blob13 {
+  .blob19 {
     border-radius: 100%;
     filter: blur(180px);
     z-index: -1;
@@ -132,8 +132,8 @@ body {
     height: 500px;
     animation: liquid-gradient 3s infinite alternate;
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-}
-  .blob14 {
+  }
+  .blob20 {
     background: radial-gradient(circle, rgba(0, 255, 255, 1) 0%, #2df8c6 21%);
     width: 300px;
     height: 300px;
@@ -144,15 +144,15 @@ body {
     top: 223%;
     animation: liquid-gradient 3s ease-in-out infinite;
   }
-
-  .blob9 {
-    background: #1a0f5e;
-    filter: blur(150px);
+  .blob21 {
+    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
+    filter: blur(180px);
     position: absolute;
     z-index: -1;
-    left: 154px;
+    right: 61%;
+    top: 350%;
     width: 400px;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     animation: liquid-gradient 3s ease-in-out infinite;
   }
@@ -161,7 +161,7 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
-  .blob11 {
+  .blob18 {
     background: linear-gradient(180deg, #00ffd1 60.4%, #00ffff 111.51%);
     filter: blur(145px);
     width: 300px;
@@ -175,7 +175,7 @@ body {
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
 
-  .blob12 {
+  .blob17 {
     animation: liquid-gradient 3s ease-in-out infinite;
     background: linear-gradient(180deg, #00ffb2 54.17%, #0ff);
     filter: blur(145.5px);
@@ -186,15 +186,15 @@ body {
     height: 300px;
     z-index: -1;
   }
-
-  .blob9 {
-    background: #1a0f5e;
-    filter: blur(200px);
+  .blob21 {
+    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
+    filter: blur(180px);
     position: absolute;
     z-index: -1;
-    left: -62px;
-    width: 300px;
-    height: 300px;
+    right: 61%;
+    top: 350%;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     animation: liquid-gradient 3s ease-in-out infinite;
   }
@@ -203,7 +203,7 @@ body {
   }
 }
 @media only screen and (max-width: 425px) {
-  .blob12{
+  .blob17 {
     animation: liquid-gradient 3s ease-in-out infinite;
     background: linear-gradient(180deg, #00ffb2 54.17%, #0ff);
     filter: blur(145);
@@ -214,7 +214,7 @@ body {
     top: 0%;
     z-index: -1;
   }
-  .blob11 {
+  .blob18 {
     background: linear-gradient(180deg, #00ffd1 60.4%, #00ffff 111.51%);
     filter: blur(268px);
     width: 250px;
@@ -227,7 +227,7 @@ body {
     animation: liquid-gradient 3s infinite alternate;
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
-  .blob13 {
+  .blob19 {
     width: 250px;
     height: 300px;
     border-radius: 100%;
@@ -240,26 +240,26 @@ body {
     background: linear-gradient(180deg, #00ffd1 60.4%, #00ffff 111.51%);
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
-  .blob14 {
-    background: radial-gradient(circle, rgba(0, 255, 255, 1) 0%, #2df8c6 21%);
+  .blob20 {
+    background: radial-gradient(circle, rgba(0, 255, 255, 1) 100%, #2df8c6 21%);
     width: 250px;
     height: 300px;
     z-index: -1;
     filter: blur(145px);
     position: absolute;
-    right: -60px;
+    right: -70px;
     top: 230%;
     animation: liquid-gradient 2s ease-in-out infinite;
   }
-  .blob10 {
+  .blob21 {
     background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
-    filter: blur(165px);
+    filter: blur(180px);
     position: absolute;
     z-index: -1;
-    right: -23px;
-    top: 382%;
-    width: 300px;
-    height: 300px;
+    right: 61%;
+    top: 350%;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     animation: liquid-gradient 3s ease-in-out infinite;
   }
