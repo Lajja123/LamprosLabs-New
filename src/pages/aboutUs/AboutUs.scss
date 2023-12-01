@@ -420,7 +420,7 @@
   filter: blur(180px);
   position: absolute;
   z-index: -1;
-  right: -23px;
+  right: 23px;
   top: 372%;
   width: 400px;
   height: 400px;
@@ -1186,14 +1186,14 @@
     animation: liquid-gradient 3s ease-in-out infinite;
   }
 }
-@keyframes liquid-gradient {
-  0% {
-    transform: translate(-100px, -50px) rotate(0deg);
-  }
-  50% {
-    transform: translate(-152px, 100px) rotate(180deg); /* Rotate 180 degrees halfway through */
-  }
-  100% {
-    transform: translate(-100px, -50px) rotate(360deg);
-  }
-}
+// @keyframes liquid-gradient {
+//   0% {
+//     transform: translate(-100px, -50px) rotate(0deg);
+//   }
+//   50% {
+//     transform: translate(-152px, 100px) rotate(180deg); /* Rotate 180 degrees halfway through */
+//   }
+//   100% {
+//     transform: translate(-100px, -50px) rotate(360deg);
+//   }
+// }

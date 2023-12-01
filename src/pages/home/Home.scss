@@ -1628,14 +1628,14 @@ input [type="radio"]:checked::after {
     display: none;
   }
 }
-@keyframes liquid-gradient {
-  0% {
-    transform: translate(-100px, -50px) rotate(0deg);
-  }
-  50% {
-    transform: translate(-152px, 100px) rotate(180deg); /* Rotate 180 degrees halfway through */
-  }
-  100% {
-    transform: translate(-100px, -50px) rotate(360deg);
-  }
-}
+// @keyframes liquid-gradient {
+//   0% {
+//     transform: translate(-100px, -50px) rotate(0deg);
+//   }
+//   50% {
+//     transform: translate(-152px, 100px) rotate(180deg); /* Rotate 180 degrees halfway through */
+//   }
+//   100% {
+//     transform: translate(-100px, -50px) rotate(360deg);
+//   }
+// }

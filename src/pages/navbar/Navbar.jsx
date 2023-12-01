@@ -62,16 +62,15 @@ function Navbar() {
             </li>
 
             <li class="nav-item dropdown three-d">
-              <a
+              <div
                 class="nav-link dropdown-toggle"
-                href="/programs/hackathon"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 PROGRAMS
-              </a>
+              </div>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li className="dropdown-list three-d">
                   <NavLink class="dropdown-item" to="/programs/hackathon">
