@@ -42,11 +42,11 @@ function Home() {
   return (
     <>
       <div className="lmplab-homepage-main-bg">
-        <div className="blob"></div>
+        {/* <div className="blob"></div>
         <div className="blob1"></div>
         <div className="blob2"></div>
         <div className="blob3"></div>
-        <div className="blob4"></div>
+        <div className="blob4"></div> */}
         <Navbar />
         <div className="scroll-top">
           <section

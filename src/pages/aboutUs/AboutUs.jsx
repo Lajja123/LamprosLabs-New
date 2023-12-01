@@ -25,12 +25,12 @@ function AboutUs() {
 
   return (
     <div className="aboutUs-main-bg">
-      <div className="blob5"></div>
+      {/* <div className="blob5"></div>
       <div className="blob6"></div>
       <div className="blob7"></div>
       <div className="blob8"></div>
       <div className="blob9"></div>
-      <div className="blob10"></div>
+      <div className="blob10"></div> */}
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}

@@ -23,13 +23,32 @@ function DaoRoadmap() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const newOpacity = 1 - scrollPosition / 1000; // Adjust 500 based on when you want the opacity change to occur
+
+      if (newOpacity >= 0) {
+        setOpacity(newOpacity);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="dao-main-bg">
-      <div className="blob17"></div>
+      {/* <div className="blob17"></div>
       <div className="blob18"></div>
       <div className="blob19"></div>
       <div className="blob20"></div>
-      <div className="blob21"></div>
+      <div className="blob21"></div> */}
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
@@ -60,8 +79,18 @@ function DaoRoadmap() {
           </Fade>
 
           <div className="dao-sec1-flex2">
-            <img className="illustration-14-1" alt="" src={daoimg1} />
-            <img className="mobile-img7" alt="" src={daoimg7} />
+            <img
+              className="illustration-14-1"
+              alt=""
+              src={daoimg1}
+              style={{ opacity }}
+            />
+            <img
+              className="mobile-img7"
+              alt=""
+              src={daoimg7}
+              style={{ opacity }}
+            />
           </div>
         </div>
 

@@ -66,10 +66,11 @@ function Navbar() {
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
               >
-                PROGRAMS
+                PROGRAM
               </div>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li className="dropdown-list three-d">
