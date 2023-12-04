@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
 import "../aboutUs/AboutUs.scss";
-import aboutImg from "../../assets/images/aboutUsImg.png";
+import aboutImg from "../../assets/images/aboutUsImg.webp";
 import vision from "../../assets/images/Vision.jpg";
 import mission from "../../assets/images/Mission.jpg";
 import Navbar from "../navbar/Navbar";
@@ -11,7 +11,7 @@ import idea from "../../assets/images/idea.png";
 import technology from "../../assets/images/technology.png";
 import website from "../../assets/images/website.png";
 import Footer from "../footer/Footer";
-import aboutImg2 from "../../assets/images/about-img2.png";
+import aboutImg2 from "../../assets/images/about-img2.webp";
 import journey from "../../assets/images/journey-img.png";
 import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
@@ -25,12 +25,6 @@ function AboutUs() {
 
   return (
     <div className="aboutUs-main-bg">
-      {/* <div className="blob5"></div>
-      <div className="blob6"></div>
-      <div className="blob7"></div>
-      <div className="blob8"></div>
-      <div className="blob9"></div>
-      <div className="blob10"></div> */}
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
@@ -41,7 +35,7 @@ function AboutUs() {
         className="aboutUs-main"
         ref={section1Ref}
         smooth={true}
-        duration={200}
+        duration={600}
       >
         <section className="section1-aboutUs py-sm-5 py-3">
           <div className="aboutImg-main-div">
@@ -51,7 +45,7 @@ function AboutUs() {
           <div className="aboutUs-section1-card px-sm-5 px-3">
             <div className="aboutUs-title pb-3">About Us</div>
 
-            <Fade duration={2000} delay={200}>
+            <Fade duration={1500} delay={100}>
               <div className="about-sec1-box">
                 <p className="aboutUs-section1-card-desc">
                   In the vibrant world of blockchain, Lampros Labs stands as a
@@ -143,7 +137,7 @@ function AboutUs() {
           className="section3-aboutUs pb-5 d-none d-lg-block"
           ref={section2Ref}
           smooth={true}
-          duration={200}
+          duration={600}
         >
           <div className="about-sec3-flex1">
             <div className="sec3-about-img1-div">
@@ -242,7 +236,7 @@ function AboutUs() {
           className="section3-aboutUs pb-5 d-lg-none"
           ref={section3Ref}
           smooth={true}
-          duration={200}
+          duration={600}
         >
           <Fade bottom duration={2000} distance="20px">
             <div className="sec3-img-heading">Our Ethos</div>
@@ -355,7 +349,7 @@ function AboutUs() {
           className="section4-aboutUs pb-sm-5"
           ref={section3Ref}
           smooth={true}
-          duration={200}
+          duration={600}
         >
           <Fade bottom duration={2000} distance="20px">
             <h1 className="sec4-about-heading pb-4">Our Web3 Journey</h1>

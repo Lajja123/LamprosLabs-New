@@ -1,7 +1,7 @@
 import React from "react";
 import "../dao-roadmap/DaoRoadmap.scss";
 import { useRef, useEffect, useState } from "react";
-import daoimg1 from "../../assets/images/daoimg1.png";
+import daoimg1 from "../../assets/images/daoimg1.webp";
 import daoimg2 from "../../assets/images/daoimg2.png";
 import daoimg3 from "../../assets/images/daoimg3.png";
 import daoimg4 from "../../assets/images/daoimg4.png";
@@ -44,11 +44,6 @@ function DaoRoadmap() {
 
   return (
     <div className="dao-main-bg">
-      {/* <div className="blob17"></div>
-      <div className="blob18"></div>
-      <div className="blob19"></div>
-      <div className="blob20"></div>
-      <div className="blob21"></div> */}
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
@@ -60,7 +55,7 @@ function DaoRoadmap() {
           className="dao-sec1-main d-none d-md-flex"
           ref={section1Ref}
           smooth={true}
-          duration={200}
+         duration={600}
         >
           <Fade bottom duration={1000} distance="20px">
             <div className="dao-sec1-flex1">
@@ -144,7 +139,7 @@ function DaoRoadmap() {
           className="dao-sec2-main"
           ref={section3Ref}
           smooth={true}
-          duration={200}
+         duration={600}
         >
           <img className="dao-roadmap-inner" alt="" src={daoline} />
           <div className="dao-sec2-first">

@@ -1,5 +1,5 @@
 .inheri-main-bg {
-  // background: url("../../assets/images/hack-bg.png");
+  background: url("../../assets/images/hack-bg.webp");
   max-width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
@@ -800,33 +800,6 @@
   }
   .sec1-box-ml {
     display: none !important;
-  }
-  .blob11 {
-    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
-    filter: blur(180px);
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    width: 450px;
-    height: 500px;
-    top: 55%;
-    animation: liquid-gradient 3s infinite alternate;
-    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-  }
-  .blob15 {
-    display: none;
-  }
-  .blob13 {
-    border-radius: 100%;
-    filter: blur(180px);
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 80%;
-    width: 500px;
-    height: 500px;
-    animation: liquid-gradient 3s infinite alternate;
-    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   }
 }
 
@@ -1683,65 +1656,6 @@
     display: flex;
     margin: 20px;
     align-items: center;
-  }
-  .blob13 {
-    border-radius: 100%;
-    filter: blur(150px);
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 250%;
-    background: #1a0f5e;
-    width: 350px;
-    height: 350px;
-    animation: liquid-gradient 3s infinite alternate;
-    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-  }
-  .blob12 {
-    animation: liquid-gradient 3s ease-in-out infinite;
-    background: linear-gradient(180deg, #00ffb2 100%, #0ff);
-    filter: blur(145);
-    width: 250px;
-    height: 300px;
-    position: absolute;
-    right: -33px;
-    top: 20%;
-    z-index: -1;
-  }
-  .blob11 {
-    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
-    width: 300px;
-    height: 300px;
-    filter: blur(145px);
-    z-index: -1;
-    position: absolute;
-    left: 9%;
-    top: 126%;
-    animation: liquid-gradient 3s infinite alternate;
-    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-  }
-  .blob14 {
-    background: radial-gradient(circle, rgba(0, 255, 255, 1) 100%, #2df8c6 21%);
-    width: 250px;
-    height: 300px;
-    z-index: -1;
-    filter: blur(145px);
-    position: absolute;
-    right: -70px;
-    top: 230%;
-    animation: liquid-gradient 2s ease-in-out infinite;
-  }
-  .blob10 {
-    background: linear-gradient(180deg, #00ffd1 100%, #00ffff 111.51%);
-    filter: blur(165px);
-    position: absolute;
-    z-index: -1;
-    right: -23px;
-    top: 382%;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    animation: liquid-gradient 3s ease-in-out infinite;
   }
 }
 @media only screen and (max-width: 375px) {

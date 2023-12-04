@@ -2,8 +2,7 @@ import React from "react";
 import "../programs/Hackathon.scss";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-import { useState, useEffect } from "react";
-import sec1bg from "../../assets/images/hackimg.png";
+import sec1bg from "../../assets/images/hackimg.webp";
 import arrow from "../../assets/images/right-arrow.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import { useRef } from "react";
@@ -16,12 +15,6 @@ function Hackathon() {
 
   return (
     <div className="inheri-main-bg">
-      {/* <div className="blob11"></div>
-      <div className="blob12"></div>
-      <div className="blob13"></div>
-      <div className="blob14"></div>
-      <div className="blob15"></div> */}
-
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
@@ -32,13 +25,13 @@ function Hackathon() {
         className="hack-section1"
         ref={section1Ref}
         smooth={true}
-        duration={200}
+        duration={600}
       >
         <div className="hack-sec1-bg col-8  ">
           <img src={sec1bg}></img>
         </div>
 
-        <Fade bottom duration={1000} distance="50px">
+        <Fade duration={1500} delay={100}>
           <div className="sec1-box col-xl-9 col-8 col-sm-9">
             <div className="sec1-box-title">
               Unleash Your Blockchain Potential
@@ -72,7 +65,7 @@ function Hackathon() {
         className="hack-section2"
         ref={section2Ref}
         smooth={true}
-        duration={200}
+        duration={600}
       >
         <div>
           {" "}
@@ -136,7 +129,7 @@ function Hackathon() {
         className="hack-section3"
         ref={section3Ref}
         smooth={true}
-        duration={200}
+        duration={600}
       >
         <div>
           <Fade bottom duration={2000} distance="5px">

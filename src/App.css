@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  /* background: url("../src/assets/images/bg1.webp"); */
 }
 
 .App-logo {
@@ -43,9 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   z-index: -1;
-  /* background-image: url("../assests/images/Bg.svg"); */
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,38 +109,5 @@
 
     animation: animate 1s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
-  }
-}
-.cursor {
-  background-color: #a6ff35;
-  width: 20px;
-  height: 20px;
-  transform-origin: center;
-  top: 0;
-  left: 0;
-  position: absolute;
-  mix-blend-mode: exclusion;
-  pointer-events: none;
-  will-change: transform;
-  transition: transform linear 0.125s, opacity 0.125s ease-in 0.125s;
-  border-radius: 100%;
-  opacity: 0;
-  z-index: 9999;
-
-  &-trail {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    border: 2px solid #ff674d;
-    top: -2px;
-    left: -2px;
-    position: absolute;
-    mix-blend-mode: exclusion;
-    pointer-events: none;
-    will-change: transform;
-    transition: transform linear 0.125s, opacity 0.125s ease-in 0.125s;
-    border-radius: 100%;
-    opacity: 0;
-    z-index: 9999;
   }
 }

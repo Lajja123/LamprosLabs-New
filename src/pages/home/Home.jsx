@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../home/Home.scss";
-import section1Img from "../../assets/images/section1-img.png";
-import section2Img from "../../assets/images/section2-img.png";
+import section1Img from "../../assets/images/section1-img.webp";
+import section2Img from "../../assets/images/section2-img.webp";
 import arrow from "../../assets/images/right-arrow.png";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
@@ -9,7 +9,6 @@ import FAQ from "../../components/Faq";
 import { question } from "../../components/FaqApi";
 import Footer from "../footer/Footer";
 import ScrollBtn from "../../components/ScrollBtn";
-import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -42,18 +41,13 @@ function Home() {
   return (
     <>
       <div className="lmplab-homepage-main-bg">
-        {/* <div className="blob"></div>
-        <div className="blob1"></div>
-        <div className="blob2"></div>
-        <div className="blob3"></div>
-        <div className="blob4"></div> */}
         <Navbar />
         <div className="scroll-top">
           <section
             className="homepage-secion1-main"
             ref={section1Ref}
             smooth={true}
-            duration={200}
+            duration={600}
           >
             <div className="section1-bgImg-main">
               <img className="section1-bgImg" src={section1Img}></img>
@@ -77,7 +71,7 @@ function Home() {
             className="homepage-secion2-main "
             ref={section2Ref}
             smooth={true}
-            duration={200}
+            duration={600}
             infinite
           >
             <img className="section2-Img" src={section2Img}></img>
@@ -138,7 +132,7 @@ function Home() {
             className="homepage-secion3-main-template"
             ref={section3Ref}
             smooth={true}
-            duration={200}
+            duration={600}
           >
             {/* <div
                 id="carouselExampleControls"

@@ -8,11 +8,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <div className="blob"></div>
-    <div className="blob1"></div>
-    <div className="blob2"></div>
-    <div className="blob3"></div>
-    <div className="blob4"></div> */}
   </React.StrictMode>
 );
 
