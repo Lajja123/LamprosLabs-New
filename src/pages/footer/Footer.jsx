@@ -2,8 +2,8 @@ import { useRef } from "react";
 import "../footer/Footer.scss";
 import discord from "../../assets/images/discord.png";
 import twitter from "../../assets/images/twitter.png";
-import linkln from "../../assets/images/linkedin.png";
-import call from "../../assets/images/call.png";
+import mirror from "../../assets/images/mirror.png";
+import telegram from "../../assets/images/telegram.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/lampros-labs-logo.png";
@@ -56,13 +56,24 @@ function Footer() {
       </div>
       {/* <div className="footer-border"></div> */}
       <div className="footer-icon-main">
-        <img src={twitter} className="footer-icon"></img>
-        <img src={discord} className="footer-icon"></img>
-        <img src={call} className="footer-icon"></img>
-        <img src={linkln} className="footer-icon"></img>
+        <Link to="https://twitter.com/lamproslabsdao" target="blank">
+          <img src={twitter} className="footer-icon"></img>
+        </Link>
+
+        <Link to="https://discord.gg/5jxNq8bDt2" target="blank">
+          <img src={discord} className="footer-icon"></img>
+        </Link>
+
+        <Link to="https://t.me/lamproslabsdao" target="blank">
+          <img src={telegram} className="footer-icon"></img>
+        </Link>
+
+        <Link>
+          <img src={mirror} className="footer-icon"></img>
+        </Link>
       </div>
       <p className="footer-copyright">
-        Copyright © 2023 Lampros labs | All rights reserved
+        Copyright © 2024 Lampros labs | All rights reserved
       </p>
     </div>
   );

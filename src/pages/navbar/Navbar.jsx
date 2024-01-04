@@ -32,7 +32,7 @@ function Navbar() {
           <img src={logo} className="logo-img" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
