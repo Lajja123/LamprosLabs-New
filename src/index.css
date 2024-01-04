@@ -8,4 +8,27 @@ body {
       rgba(0, 0, 0, 0.2) 100%
     ),
     #0a11b5;
+  --sb-track-color: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #0a11b5;
+  --sb-thumb-color: #a6ff35;
+  --sb-size: 6px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
 }
