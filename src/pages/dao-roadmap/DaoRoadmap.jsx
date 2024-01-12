@@ -45,6 +45,15 @@ function DaoRoadmap() {
 
   return (
     <div className="dao-main-bg">
+      <Helmet>
+        <meta property="og:title" content="The Rock" />
+        <meta property="og:type" content="video.movie" />
+
+        <meta
+          property="og:image"
+          content="https://ia.media-imdb.com/images/rock.jpg"
+        />
+      </Helmet>
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
@@ -52,15 +61,6 @@ function DaoRoadmap() {
         section3Ref={section3Ref}
       />
       <div className="dao-roadmap">
-        <Helmet>
-          <meta property="og:title" content="The Rock" />
-          <meta property="og:type" content="video.movie" />
-
-          <meta
-            property="og:image"
-            content="https://ia.media-imdb.com/images/rock.jpg"
-          />
-        </Helmet>
         <div
           className="dao-sec1-main d-none d-md-flex"
           ref={section1Ref}
