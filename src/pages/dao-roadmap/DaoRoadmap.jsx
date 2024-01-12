@@ -51,11 +51,20 @@ function DaoRoadmap() {
         section3Ref={section3Ref}
       />
       <div className="dao-roadmap">
+        <Helmet>
+          <meta property="og:title" content="The Rock" />
+          <meta property="og:type" content="video.movie" />
+
+          <meta
+            property="og:image"
+            content="https://ia.media-imdb.com/images/rock.jpg"
+          />
+        </Helmet>
         <div
           className="dao-sec1-main d-none d-md-flex"
           ref={section1Ref}
           smooth={true}
-         duration={600}
+          duration={600}
         >
           <Fade bottom duration={1000} distance="20px">
             <div className="dao-sec1-flex1">
@@ -139,7 +148,7 @@ function DaoRoadmap() {
           className="dao-sec2-main"
           ref={section3Ref}
           smooth={true}
-         duration={600}
+          duration={600}
         >
           <img className="dao-roadmap-inner" alt="" src={daoline} />
           <div className="dao-sec2-first">
