@@ -8,9 +8,8 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    // getCurrentWalletConnected();
-    // addWalleteListener();
     setTimeout(() => {
       setLoading(false);
     }, 3000);
