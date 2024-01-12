@@ -17,6 +17,7 @@ import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
 import Roll from "react-reveal/Roll";
+import { Helmet } from "react-helmet";
 
 function DaoRoadmap() {
   const section1Ref = useRef(null);
