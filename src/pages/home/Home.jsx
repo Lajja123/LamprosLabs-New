@@ -13,9 +13,20 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Helmet } from "react-helmet";
+import DocumentMeta from "react-document-meta";
 
 function Home() {
+  const meta = {
+    title: "Home",
+    description: "Home page",
+    canonical: "http://example.com/path/to/page",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "react,meta,document,html,tags",
+      },
+    },
+  };
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleBeforeChange = (current, next) => {
@@ -42,6 +53,7 @@ function Home() {
   return (
     <>
       <div>
+        <DocumentMeta {...meta} />
         <div className="lmplab-homepage-main-bg">
           <Navbar />
           <div className="scroll-top">

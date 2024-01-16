@@ -17,26 +17,28 @@ import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
-import { Helmet } from "react-helmet";
+import DocumentMeta from "react-document-meta";
 
 function AboutUs() {
+  const meta = {
+    title: "About Us",
+    description: "About Us page",
+    canonical: "http://example.com/path/to/page",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "react,meta,document,html,tags",
+      },
+    },
+  };
+
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
   return (
     <div>
-      {" "}
-      <Helmet>
-        <meta property="og:title" content="About Us Page" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://localhost:3000/about-us" />
-        <meta
-          property="og:image"
-          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-        />
-        <meta property="og:description" content="hello..." />
-      </Helmet>
+      <DocumentMeta {...meta} />
       <div className="aboutUs-main-bg">
         <Navbar />
         <ScrollBtn
