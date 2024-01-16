@@ -38,24 +38,19 @@ function Home() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
-
+  const title = "Home";
+  const url = "https://lampros-labs-new.vercel.app/";
+  const imageUrl =
+    "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png";
   return (
     <>
       <div>
         <Helmet>
-          <meta charset="utf-8" />
-          <title>My Page Title</title>
-          <meta name="description" content="This is a sample description." />
+          <meta property="og:title" content={title} />
           <meta property="og:type" content="article" />
-          <meta
-            property="og:url"
-            content="https://lampros-labs-new.vercel.app/"
-          />
-          <meta
-            property="og:image"
-            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-          />
-        </Helmet>{" "}
+          <meta property="og:url" content={url} />
+          <meta property="og:image" content={imageUrl} />
+        </Helmet>
         <div className="lmplab-homepage-main-bg">
           <Navbar />
           <div className="scroll-top">
