@@ -37,26 +37,29 @@ function Home() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
+
   useEffect(() => {
     // Update document head with Open Graph meta tags
     document.title = "Lampros Labs home";
-
-    const ogTitleTag = document.querySelector('meta[property="og:title"]');
-    const ogTypeTag = document.querySelector('meta[property="og:type"]');
-    const ogUrlTag = document.querySelector('meta[property="og:url"]');
-    const ogDescriptionTag = document.querySelector(
-      'meta[property="og:description"]'
-    );
-    const ogImageTag = document.querySelector('meta[property="og:image"]');
-
-    // Check if meta tags are found before updating their content
-    if (ogTitleTag) ogTitleTag.content = "Lampros Labs home";
-    if (ogTypeTag) ogTypeTag.content = "article";
-    if (ogUrlTag) ogUrlTag.content = "https://lampros-labs-new.vercel.app";
-    if (ogDescriptionTag) ogDescriptionTag.content = "Home Des....";
-    if (ogImageTag)
-      ogImageTag.content =
-        "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png";
+    document
+      .querySelector('meta[property="og:title"]')
+      ?.setAttribute("content", "Lampros Labs home");
+    document
+      .querySelector('meta[property="og:type"]')
+      ?.setAttribute("content", "article");
+    document
+      .querySelector('meta[property="og:url"]')
+      ?.setAttribute("content", "https://lampros-labs-new.vercel.app");
+    document
+      .querySelector('meta[property="og:description"]')
+      ?.setAttribute("content", "Home Des....");
+    document
+      .querySelector('meta[property="og:image"]')
+      ?.setAttribute(
+        "content",
+        "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+      );
+    // Add other Open Graph meta tags as needed
 
     // Clean up when component unmounts
     return () => {
@@ -66,7 +69,6 @@ function Home() {
       ogTags.forEach((tag) => tag.parentNode.removeChild(tag));
     };
   }, []);
-
   return (
     <>
       <div className="lmplab-homepage-main-bg">
