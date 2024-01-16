@@ -40,7 +40,7 @@ function Home() {
 
   useEffect(() => {
     // Update document head with Open Graph meta tags
-    document.title = title;
+    document.title = "Lampros Labs home";
     document.querySelector('meta[property="og:title"]').content =
       "Lampros Labs home";
     document.querySelector('meta[property="og:type"]').content = "article";
