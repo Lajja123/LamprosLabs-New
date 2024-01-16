@@ -13,6 +13,7 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,6 +42,20 @@ function Home() {
   return (
     <>
       <div className="lmplab-homepage-main-bg">
+        <Helmet>
+          <meta charset="utf-8" />
+          <title>Home</title>
+          <meta name="description" content="Home description" />
+          <meta property="og:title" content="Home Title" />
+          <meta
+            property="og:description"
+            content="Your Open Graph Description"
+          />
+          <meta
+            property="og:image"
+            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+          />
+        </Helmet>
         <Navbar />
         <div className="scroll-top">
           <section
