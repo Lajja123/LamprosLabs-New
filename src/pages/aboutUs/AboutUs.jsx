@@ -28,18 +28,14 @@ function AboutUs() {
     <div>
       {" "}
       <Helmet>
-        <meta charset="utf-8" />
-        <title>About</title>
-        <meta name="description" content="This is a sample description." />
+        <meta property="og:title" content="About Us Page" />
         <meta property="og:type" content="article" />
-        <meta
-          property="og:url"
-          content="https://lampros-labs-new.vercel.app/"
-        />
+        <meta property="og:url" content="http://localhost:3000/about-us" />
         <meta
           property="og:image"
           content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
         />
+        <meta property="og:description" content="hello..." />
       </Helmet>
       <div className="aboutUs-main-bg">
         <Navbar />
