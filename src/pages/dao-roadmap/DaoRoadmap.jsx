@@ -17,7 +17,6 @@ import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
 import Roll from "react-reveal/Roll";
-import { Helmet } from "react-helmet";
 
 function DaoRoadmap() {
   const section1Ref = useRef(null);
@@ -45,19 +44,6 @@ function DaoRoadmap() {
 
   return (
     <div className="dao-main-bg">
-      <Helmet>
-        <meta property="og:title" content="Lampros Labs dao" />
-        <meta property="og:description" content="Dao Des...." />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:url"
-          content="https://lampros-labs-new.vercel.app/"
-        />
-        <meta
-          property="og:image"
-          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-        />
-      </Helmet>
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
