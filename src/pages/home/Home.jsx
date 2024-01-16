@@ -38,7 +38,25 @@ function Home() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
+  useEffect(() => {
+    // Update document head with Open Graph meta tags
+    document.title = title;
+    document.querySelector('meta[property="og:title"]').content = title;
+    document.querySelector('meta[property="og:type"]').content = "article";
+    document.querySelector('meta[property="og:url"]').content = url;
+    document.querySelector('meta[property="og:description"]').content =
+      description;
+    document.querySelector('meta[property="og:image"]').content = imageUrl;
+    // Add other Open Graph meta tags as needed
 
+    // Clean up when component unmounts
+    return () => {
+      // Reset the document title and remove Open Graph meta tags if necessary
+      document.title = "Default Title";
+      const ogTags = document.querySelectorAll('meta[property^="og:"]');
+      ogTags.forEach((tag) => tag.parentNode.removeChild(tag));
+    };
+  }, [title, description, url, imageUrl]);
   return (
     <>
       <div className="lmplab-homepage-main-bg">
