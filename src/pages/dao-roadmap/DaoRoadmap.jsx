@@ -46,8 +46,8 @@ function DaoRoadmap() {
   return (
     <div className="dao-main-bg">
       <Helmet>
-        <meta property="og:title" content="The Rock" />
-        <meta property="og:type" content="video.movie" />
+        <meta property="og:title" content="My Open Graph title" />
+        <meta property="og:description" content="My Open Graph description" />
 
         <meta
           property="og:image"
