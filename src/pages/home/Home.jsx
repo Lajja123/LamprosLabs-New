@@ -38,30 +38,6 @@ function Home() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
-  const title = "Lampros Labs home";
-  const description = "Home Des....";
-  const url = "https://lampros-labs-new.vercel.app/";
-  const imageUrl =
-    "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png";
-
-  useEffect(() => {
-    // Update document head with Open Graph meta tags
-    document.title = title;
-    document.querySelector('meta[property="og:title"]').content = title;
-    document.querySelector('meta[property="og:type"]').content = "article";
-    document.querySelector('meta[property="og:url"]').content = url;
-    document.querySelector('meta[property="og:description"]').content =
-      description;
-    document.querySelector('meta[property="og:image"]').content = imageUrl;
-
-    // Clean up when component unmounts
-    return () => {
-      // Reset the document title and remove Open Graph meta tags if necessary
-      document.title = "Default Title";
-      const ogTags = document.querySelectorAll('meta[property^="og:"]');
-      ogTags.forEach((tag) => tag.parentNode.removeChild(tag));
-    };
-  }, [title, description, url, imageUrl]);
 
   return (
     <>
