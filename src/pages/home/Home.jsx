@@ -13,6 +13,7 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,40 +39,23 @@ function Home() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
-  useEffect(() => {
-    // Update document head with Open Graph meta tags
-    document.title = "Lampros Labs home";
-    document
-      .querySelector('meta[property="og:title"]')
-      ?.setAttribute("content", "Lampros Labs home");
-    document
-      .querySelector('meta[property="og:type"]')
-      ?.setAttribute("content", "article");
-    document
-      .querySelector('meta[property="og:url"]')
-      ?.setAttribute("content", "https://lampros-labs-new.vercel.app");
-    document
-      .querySelector('meta[property="og:description"]')
-      ?.setAttribute("content", "Home Des....");
-    document
-      .querySelector('meta[property="og:image"]')
-      ?.setAttribute(
-        "content",
-        "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-      );
-    // Add other Open Graph meta tags as needed
-
-    // Clean up when component unmounts
-    return () => {
-      // Reset the document title and remove Open Graph meta tags if necessary
-      document.title = "Lampros Labs";
-      const ogTags = document.querySelectorAll('meta[property^="og:"]');
-      ogTags.forEach((tag) => tag.parentNode.removeChild(tag));
-    };
-  }, []);
   return (
     <>
       <div className="lmplab-homepage-main-bg">
+        <Helmet>
+          <meta charset="utf-8" />
+          <title>My Page Title</title>
+          <meta name="description" content="This is a sample description." />
+          <meta property="og:type" content="article" />
+          <meta
+            property="og:url"
+            content="https://lampros-labs-new.vercel.app/"
+          />
+          <meta
+            property="og:image"
+            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+          />
+        </Helmet>
         <Navbar />
         <div className="scroll-top">
           <section

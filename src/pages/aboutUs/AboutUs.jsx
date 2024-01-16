@@ -17,6 +17,7 @@ import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
 
 function AboutUs() {
   const section1Ref = useRef(null);
@@ -25,6 +26,20 @@ function AboutUs() {
 
   return (
     <div className="aboutUs-main-bg">
+      <Helmet>
+        <meta charset="utf-8" />
+        <title>About</title>
+        <meta name="description" content="This is a sample description." />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content="https://lampros-labs-new.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+        />
+      </Helmet>
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}
