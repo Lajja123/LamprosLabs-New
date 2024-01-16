@@ -43,13 +43,12 @@ function Home() {
     <>
       <div className="lmplab-homepage-main-bg">
         <Helmet>
-          <meta charset="utf-8" />
-          <title>Home</title>
-          <meta name="description" content="Home description" />
-          <meta property="og:title" content="Home Title" />
+          <meta property="og:title" content="Lampros Labs home" />
+          <meta property="og:description" content="Home Des...." />
+          <meta property="og:type" content="article" />
           <meta
-            property="og:description"
-            content="Your Open Graph Description"
+            property="og:url"
+            content="https://lampros-labs-new.vercel.app/"
           />
           <meta
             property="og:image"

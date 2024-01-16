@@ -46,11 +46,13 @@ function DaoRoadmap() {
   return (
     <div className="dao-main-bg">
       <Helmet>
-        <meta charset="utf-8" />
-        <title>DataDao</title>
-        <meta name="description" content="DataDao description" />
-        <meta property="og:title" content="DataDao Title" />
-        <meta property="og:description" content="Your Open Graph Description" />
+        <meta property="og:title" content="Lampros Labs dao" />
+        <meta property="og:description" content="Dao Des...." />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content="https://lampros-labs-new.vercel.app/"
+        />
         <meta
           property="og:image"
           content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"

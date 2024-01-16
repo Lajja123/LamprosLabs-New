@@ -7,6 +7,7 @@ import arrow from "../../assets/images/right-arrow.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import { useRef } from "react";
 import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
 
 function Hackathon() {
   const section1Ref = useRef(null);
@@ -15,6 +16,19 @@ function Hackathon() {
 
   return (
     <div className="inheri-main-bg">
+      <Helmet>
+        <meta property="og:title" content="Lampros Labs Hackathon" />
+        <meta property="og:description" content="Hackathon Des...." />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content="https://lampros-labs-new.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+        />
+      </Helmet>
       <Navbar />
       <ScrollBtn
         section1Ref={section1Ref}

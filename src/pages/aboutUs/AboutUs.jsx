@@ -27,11 +27,13 @@ function AboutUs() {
   return (
     <div className="aboutUs-main-bg">
       <Helmet>
-        <meta charset="utf-8" />
-        <title>About</title>
-        <meta name="description" content="About description" />
-        <meta property="og:title" content="About Title" />
-        <meta property="og:description" content="Your Open Graph Description" />
+        <meta property="og:title" content="Lampros Labs about" />
+        <meta property="og:description" content="About Des...." />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content="https://lampros-labs-new.vercel.app/"
+        />
         <meta
           property="og:image"
           content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
