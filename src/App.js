@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DaoRoadmap from "./pages/dao-roadmap/DaoRoadmap";
 import Hackathon from "./pages/programs/Hackathon";
 import React, { useState, useEffect } from "react";
+import { HelmetProvider } from "react-helmet";
 
 function App() {
   const [loading, setLoading] = useState(true);

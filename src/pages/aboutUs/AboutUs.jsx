@@ -17,28 +17,14 @@ import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
-import DocumentMeta from "react-document-meta";
 
 function AboutUs() {
-  const meta = {
-    title: "About Us",
-    description: "About Us page",
-    canonical: "http://example.com/path/to/page",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
-    },
-  };
-
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
   return (
     <div>
-      <DocumentMeta {...meta} />
       <div className="aboutUs-main-bg">
         <Navbar />
         <ScrollBtn

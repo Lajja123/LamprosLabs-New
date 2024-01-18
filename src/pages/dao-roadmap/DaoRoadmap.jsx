@@ -16,21 +16,8 @@ import Footer from "../footer/Footer";
 import ScrollBtn from "../../components/ScrollBtn";
 import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
-import DocumentMeta from "react-document-meta";
 
 function DaoRoadmap() {
-  const meta = {
-    title: "DaoRoadmap",
-    description: "DaoRoadmap",
-    canonical: "http://example.com/path/to/page",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
-    },
-  };
-
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
@@ -55,7 +42,6 @@ function DaoRoadmap() {
 
   return (
     <div>
-      <DocumentMeta {...meta} />
       <div className="dao-main-bg">
         <Navbar />
         <ScrollBtn

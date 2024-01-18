@@ -7,28 +7,14 @@ import arrow from "../../assets/images/right-arrow.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import { useRef } from "react";
 import { Fade } from "react-reveal";
-import DocumentMeta from "react-document-meta";
 
 function Hackathon() {
-  const meta = {
-    title: "Hackathon",
-    description: "Hackathon page",
-    canonical: "http://example.com/path/to/page",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
-    },
-  };
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
   return (
     <div>
-      {" "}
-      <DocumentMeta {...meta} />{" "}
       <div className="inheri-main-bg">
         <Navbar />
         <ScrollBtn
