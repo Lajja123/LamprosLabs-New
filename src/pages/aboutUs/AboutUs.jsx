@@ -15,7 +15,6 @@ import aboutImg2 from "../../assets/images/about-img2.webp";
 import journey from "../../assets/images/journey-img.png";
 import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
-import Slide from "react-reveal/Slide";
 import { Fade } from "react-reveal";
 
 function AboutUs() {

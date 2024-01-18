@@ -13,7 +13,7 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MetaTags from "../../components/Metatags";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -39,20 +39,23 @@ function Home() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
 
-  const ogTitle = "Home Page Title";
-  const ogType = "website";
-  const ogUrl = "https://example.com";
-  const ogImageUrl = "https://example.com/home-image.jpg";
-
   return (
     <>
       <div>
-        <MetaTags
-          title={ogTitle}
-          type={ogType}
-          url={ogUrl}
-          imageUrl={ogImageUrl}
-        />
+        <Helmet>
+          <meta property="og:title" content="Homepage" />
+          <meta property="og:description" content="Homepage Description" />
+          <meta
+            property="og:image"
+            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+          />
+          <meta
+            property="og:url"
+            content="https://lampros-labs-new.vercel.app/"
+          />
+          <meta property="og:type" content="website" />
+        </Helmet>
+
         <div className="lmplab-homepage-main-bg">
           <Navbar />
           <div className="scroll-top">
