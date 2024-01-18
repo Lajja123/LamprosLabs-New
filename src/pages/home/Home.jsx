@@ -14,66 +14,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
+import MetaTags from "../../components/Metatags";
 
 function Home() {
-  useEffect(() => {
-    // Update meta tags when the component mounts
-    updateMetaTags();
-    // Cleanup function to revert changes when the component unmounts
-    return () => revertMetaTags();
-  }, []); // Empty dependency array ensures this effect runs only once
-  const updateMetaTags = () => {
-    document.title = "Lampros Homepage";
-    const metaTags = [
-      { property: "og:type", content: "website" },
-      {
-        property: "og:url",
-        content: "https://lampros-labs-new.vercel.app/",
-      },
-      { property: "og:site_name", content: "Lampros Labs" },
-      {
-        property: "og:image",
-        content:
-          "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png",
-      },
-      {
-        name: "twitter:card",
-        content:
-          "https://www.kasandbox.org/programming-images/avatars/spunky-sam.png",
-      },
-      { name: "twitter:domain", content: "https://twitter.com/lamproslabsdao" },
-      {
-        name: "twitter:title",
-        content: "Twitter",
-      },
-      {
-        name: "twitter:description",
-        content: "Twitter....",
-      },
-    ];
-
-    metaTags.forEach((tag) => {
-      const existingTag = document.querySelector(
-        `meta[${
-          tag.property ? `property="${tag.property}"` : `name="${tag.name}"`
-        }]`
-      );
-      if (existingTag) {
-        // Update existing tag
-        existingTag.setAttribute("content", tag.content);
-      } else {
-        // Create new tag
-        const newTag = document.createElement("meta");
-        newTag.setAttribute(
-          tag.property ? "property" : "name",
-          tag.property || tag.name
-        );
-        newTag.setAttribute("content", tag.content);
-        document.head.appendChild(newTag);
-      }
-    });
-  };
-  const revertMetaTags = () => {};
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleBeforeChange = (current, next) => {
@@ -100,22 +43,7 @@ function Home() {
   return (
     <>
       <div>
-        {/* <Helmet>
-          <meta property="og:title" content="Your Open Graph Title" />
-          <meta
-            property="og:description"
-            content="Your Open Graph Description"
-          />
-          <meta
-            property="og:image"
-            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-          />
-          <meta
-            property="og:url"
-            content="https://lampros-labs-new.vercel.app/"
-          />
-          <meta property="og:type" content="website" />
-        </Helmet> */}
+        <MetaTags />
 
         <div className="lmplab-homepage-main-bg">
           <Navbar />
