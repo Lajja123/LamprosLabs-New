@@ -13,7 +13,7 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Helmet } from "react-helmet";
+import SEO from "../../components/SEO";
 
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,19 +42,11 @@ function Home() {
   return (
     <>
       <div>
-        <Helmet>
-          <meta property="og:title" content="Homepage" />
-          <meta property="og:description" content="Homepage Description" />
-          <meta
-            property="og:image"
-            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-          />
-          <meta
-            property="og:url"
-            content="https://lampros-labs-new.vercel.app/"
-          />
-          <meta property="og:type" content="website" />
-        </Helmet>
+        <SEO
+          title={"Home Page"}
+          type={"website"}
+          description={"This is a description of Home page"}
+        />
 
         <div className="lmplab-homepage-main-bg">
           <Navbar />
