@@ -46,6 +46,7 @@ function Home() {
           title={"Home Page"}
           type={"website"}
           description={"This is a description of Home page"}
+          url={"https://lampros-labs-new.vercel.app/"}
         />
 
         <div className="lmplab-homepage-main-bg">
