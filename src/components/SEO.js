@@ -7,19 +7,13 @@ function SEO(props) {
   return (
     <>
       <Helmet>
-        <title>{props.title ? props.title : null}</title>
-        <meta
-          name="description"
-          content={props.description ? props.description : null}
-        />
+        <title>{props.title}</title>
+        <meta name="description" content={props.description} />
 
-        <meta property="og:url" content={props.url ? props.url : null} />
+        <meta property="og:url" content={props.url} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={props.title ? props.title : null} />
-        <meta
-          property="og:description"
-          content={props.description ? props.description : null}
-        />
+        <meta property="og:title" content={props.title} />
+        <meta property="og:description" content={props.description} />
 
         <meta
           property="og:image"
@@ -33,12 +27,9 @@ function SEO(props) {
           property="twitter:domain"
           content="3c73-2401-4900-1c80-d148-7494-e474-ab00-66c.ngrok-free.app"
         />
-        <meta property="twitter:url" content={props.url ? props.url : null} />
+        <meta property="twitter:url" content={props.url} />
         <meta name="twitter:title" content="profilePage" />
-        <meta
-          name="twitter:description"
-          content={props.description ? props.description : null}
-        />
+        <meta name="twitter:description" content={props.description} />
 
         <meta
           name="twitter:image"
