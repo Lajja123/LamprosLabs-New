@@ -1,43 +1,41 @@
+// src/components/seo.js
 import React from "react";
 import { Helmet } from "react-helmet";
-// import img1 from "../assets/fixed-ratio1.jpg";
-import instaImage1 from "../assets/images/Mission.jpg";
+import { useStaticQuery, graphql } from "gatsby";
 
-function SEO(props) {
+const Seo = ({ title, description, image, url }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+        }
+      }
+    }
+  `);
+
+  const { siteMetadata } = data.site;
+
   return (
-    <>
-      <Helmet>
-        <title>{props.title}</title>
-        <meta name="description" content={props.description} />
-
-        <meta property="og:url" content={props.url} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={props.title} />
-        <meta property="og:description" content={props.description} />
-
-        <meta
-          property="og:image"
-          content={
-            "https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-          }
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:domain"
-          content="3c73-2401-4900-1c80-d148-7494-e474-ab00-66c.ngrok-free.app"
-        />
-        <meta property="twitter:url" content={props.url} />
-        <meta name="twitter:title" content="profilePage" />
-        <meta name="twitter:description" content={props.description} />
-
-        <meta
-          name="twitter:image"
-          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-        />
-      </Helmet>
-    </>
+    <Helmet>
+      <meta property="og:title" content={title || siteMetadata.title} />
+      <meta
+        property="og:description"
+        content={description || siteMetadata.description}
+      />
+      <meta
+        property="og:image"
+        content={
+          image ||
+          `${siteMetadata.siteUrl}/https://www.kasandbox.org/programming-images/avatars/old-spice-man.png`
+        }
+      />
+      <meta property="og:url" content={url || siteMetadata.siteUrl} />
+      {/* Other Open Graph meta tags */}
+    </Helmet>
   );
-}
+};
 
-export default SEO;
+export default Seo;

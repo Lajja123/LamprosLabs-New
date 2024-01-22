@@ -16,7 +16,6 @@ import journey from "../../assets/images/journey-img.png";
 import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import { Fade } from "react-reveal";
-import SEO from "../../components/SEO";
 
 function AboutUs() {
   const section1Ref = useRef(null);
@@ -25,12 +24,6 @@ function AboutUs() {
 
   return (
     <div>
-      <SEO
-        title={"About Us Page"}
-        type={"website"}
-        description={"This is a description of About Us page"}
-        url={"https://lampros-labs-new.vercel.app/about-us"}
-      />
       <div className="aboutUs-main-bg">
         <Navbar />
         <ScrollBtn
