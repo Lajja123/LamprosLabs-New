@@ -56,9 +56,9 @@ function Navbar() {
               </NavLink>
             </li>
             <li class="nav-item three-d">
-              <NavLink class="nav-link" to="/about-us">
+              <a class="nav-link" href="/about-us">
                 ABOUT US
-              </NavLink>
+              </a>
             </li>
 
             <li class="nav-item dropdown three-d">
