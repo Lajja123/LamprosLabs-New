@@ -16,6 +16,7 @@ import journey from "../../assets/images/journey-img.png";
 import journey1 from "../../assets/images/journey1.png";
 import ScrollBtn from "../../components/ScrollBtn";
 import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet-async";
 
 function AboutUs() {
   const section1Ref = useRef(null);
@@ -24,6 +25,70 @@ function AboutUs() {
 
   return (
     <div>
+      <Helmet>
+        <meta
+          data-react-helmet="true"
+          name="twitter:card"
+          content="summary_large_image"
+        />
+        <meta
+          data-react-helmet="true"
+          name="twitter:site"
+          contact="@lamproslabs"
+        />
+        <meta
+          name="twitter:creator"
+          content="Author"
+          data-react-helmet="true"
+        />
+        <meta
+          name="twitter:title"
+          content="Lampros Labs Twitter"
+          data-react-helmet="true"
+        />
+        <meta
+          name="twitter:description"
+          content="Lampros Labs Twitter Description"
+          data-react-helmet="true"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+          data-react-helmet="true"
+        />
+
+        <meta
+          property="og:site_name"
+          content="LamprosLabs.io"
+          data-react-helmet="true"
+        />
+        <meta
+          property="og:title"
+          content="LamprosLabs about"
+          data-react-helmet="true"
+        />
+        <meta
+          property="og:url"
+          content="https://lampros-labs-new.vercel.app/about-us"
+          data-react-helmet="true"
+        />
+        <meta
+          property="og:description"
+          content="Lampros Aboutpage..."
+          data-react-helmet="true"
+        />
+        <meta
+          property="og:image"
+          content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
+          data-react-helmet="true"
+        />
+        <meta
+          property="og:image:alt"
+          content="Gatsby JS"
+          data-react-helmet="true"
+        />
+        <meta property="og:type" content="website" data-react-helmet="true" />
+      </Helmet>
       <div className="aboutUs-main-bg">
         <Navbar />
         <ScrollBtn

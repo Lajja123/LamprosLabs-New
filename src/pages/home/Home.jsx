@@ -13,7 +13,6 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Helmet } from "react-helmet-async";
 
 function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,70 +41,6 @@ function Home() {
   return (
     <>
       <div>
-        <Helmet>
-          <meta
-            data-react-helmet="true"
-            name="twitter:card"
-            content="summary_large_image"
-          />
-          <meta
-            data-react-helmet="true"
-            name="twitter:site"
-            contact="@lamproslabs"
-          />
-          <meta
-            name="twitter:creator"
-            content="Author"
-            data-react-helmet="true"
-          />
-          <meta
-            name="twitter:title"
-            content="Lampros Labs Twitter"
-            data-react-helmet="true"
-          />
-          <meta
-            name="twitter:description"
-            content="Lampros Labs Twitter Description"
-            data-react-helmet="true"
-          />
-          <meta
-            name="twitter:image"
-            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-            data-react-helmet="true"
-          />
-
-          <meta
-            property="og:site_name"
-            content="LamprosLabs.io"
-            data-react-helmet="true"
-          />
-          <meta
-            property="og:title"
-            content="LamprosLabs home"
-            data-react-helmet="true"
-          />
-          <meta
-            property="og:url"
-            content="https://lampros-labs-new.vercel.app/home"
-            data-react-helmet="true"
-          />
-          <meta
-            property="og:description"
-            content="Lampros Homepage..."
-            data-react-helmet="true"
-          />
-          <meta
-            property="og:image"
-            content="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png"
-            data-react-helmet="true"
-          />
-          <meta
-            property="og:image:alt"
-            content="Gatsby JS"
-            data-react-helmet="true"
-          />
-          <meta property="og:type" content="website" data-react-helmet="true" />
-        </Helmet>
         <div className="lmplab-homepage-main-bg">
           <Navbar />
           <div className="scroll-top">
